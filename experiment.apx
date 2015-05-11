@@ -13,7 +13,7 @@
             <trial id="trial11">
                 <screen id="screen1"/>
                 <stimulus id="stim1"/>
-                <standard id="stimref"/>
+                <standard id="stimref1"/>
             </trial>
         </trials>
     </procedure>
@@ -44,7 +44,7 @@
             <gridLayout height="3" width="1" id="main_layout">
                 <gridLayout width="3" height="1" columnstretch="1,2,1" rowstretch="1" y="1">
                     <label id="label_1" x="2" y="1">
-                        <text>How much the second stimulus fluctuates with respect to the first one?</text>
+                        <text>How much does the second stimulus fluctuate with respect to the first one?</text>
                     </label>
                 </gridLayout>
                 <gridLayout width="9" height="1" columnstretch="1,1,1,1,1,1,1,1,1" rowstretch="1" y="2">
@@ -194,7 +194,6 @@
             </datablocks>
         </stimulus>
     </stimuli>
-    
     <results>
         <xsltscript>apexresult.xsl</xsltscript>
         <saveprocessedresults>true</saveprocessedresults>
