@@ -19,6 +19,36 @@
                     <stimulus id="stim1"/>
                     <standard id="stimref1"/>
                 </trial>
+                <trial id="trial12">
+                    <screen id="screen1"/>
+                    <stimulus id="stim2"/>
+                    <standard id="stimref1"/>
+                </trial>
+                <trial id="trial13">
+                    <screen id="screen1"/>
+                    <stimulus id="stim3"/>
+                    <standard id="stimref1"/>
+                </trial>
+                <trial id="trial14">
+                    <screen id="screen1"/>
+                    <stimulus id="stim4"/>
+                    <standard id="stimref1"/>
+                </trial>
+                <trial id="trial15">
+                    <screen id="screen1"/>
+                    <stimulus id="stim5"/>
+                    <standard id="stimref1"/>
+                </trial>
+                <trial id="trial16">
+                    <screen id="screen1"/>
+                    <stimulus id="stim6"/>
+                    <standard id="stimref1"/>
+                </trial>
+                <trial id="trial17">
+                    <screen id="screen1"/>
+                    <stimulus id="stim7"/>
+                    <standard id="stimref1"/>
+                </trial>
             </trials>
         </procedure>
         <procedure xsi:type="apex:constantProcedureType" id="procedure2">
@@ -32,6 +62,36 @@
                 <trial id="trial21">
                     <screen id="screen1"/>
                     <stimulus id="stim1"/>
+                    <standard id="stimref2"/>
+                </trial>
+                <trial id="trial22">
+                    <screen id="screen1"/>
+                    <stimulus id="stim2"/>
+                    <standard id="stimref2"/>
+                </trial>
+                <trial id="trial23">
+                    <screen id="screen1"/>
+                    <stimulus id="stim3"/>
+                    <standard id="stimref2"/>
+                </trial>
+                <trial id="trial24">
+                    <screen id="screen1"/>
+                    <stimulus id="stim4"/>
+                    <standard id="stimref2"/>
+                </trial>
+                <trial id="trial25">
+                    <screen id="screen1"/>
+                    <stimulus id="stim5"/>
+                    <standard id="stimref2"/>
+                </trial>
+                <trial id="trial26">
+                    <screen id="screen1"/>
+                    <stimulus id="stim6"/>
+                    <standard id="stimref2"/>
+                </trial>
+                <trial id="trial27">
+                    <screen id="screen1"/>
+                    <stimulus id="stim7"/>
                     <standard id="stimref2"/>
                 </trial>
             </trials>
