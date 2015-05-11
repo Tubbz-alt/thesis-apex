@@ -230,6 +230,6 @@
         <saveprocessedresults>true</saveprocessedresults>
     </results>
     <general>
-        <autosave>false</autosave>
+        <autosave>true</autosave>
     </general>
 </apex:apex>
