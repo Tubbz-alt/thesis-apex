@@ -2,20 +2,40 @@
 <apex:apex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://med.kuleuven.be/exporl/apex/3.0.4/experiment ../../../../../Program%20Files%20(x86)/apex/schemas/experiment.xsd"
  xmlns:apex="http://med.kuleuven.be/exporl/apex/3.0.4/experiment" version="1">
-    <procedure xsi:type="apex:constantProcedureType">
+    <procedure xsi:type="apex:multiProcedureType">
         <parameters>
-            <presentations>1</presentations>
-            <order>random</order>
-            <choices>2</choices>
-            <pause_between_stimuli>800</pause_between_stimuli>
-        </parameters>
-        <trials>
-            <trial id="trial11">
-                <screen id="screen1"/>
-                <stimulus id="stim1"/>
-                <standard id="stimref1"/>
-            </trial>
-        </trials>
+            <order>random</order> 
+        </parameters> 
+        <procedure xsi:type="apex:constantProcedureType" id="procedure1">
+            <parameters>
+                <presentations>1</presentations>
+                <order>random</order>
+                <choices>2</choices>
+                <pause_between_stimuli>800</pause_between_stimuli>
+            </parameters>
+            <trials>
+                <trial id="trial11">
+                    <screen id="screen1"/>
+                    <stimulus id="stim1"/>
+                    <standard id="stimref1"/>
+                </trial>
+            </trials>
+        </procedure>
+        <procedure xsi:type="apex:constantProcedureType" id="procedure2">
+            <parameters>
+                <presentations>1</presentations>
+                <order>random</order>
+                <choices>2</choices>
+                <pause_between_stimuli>800</pause_between_stimuli>
+            </parameters>
+            <trials>
+                <trial id="trial21">
+                    <screen id="screen1"/>
+                    <stimulus id="stim1"/>
+                    <standard id="stimref2"/>
+                </trial>
+            </trials>
+        </procedure>
     </procedure>
     <corrector xsi:type="apex:alternatives">
         <answers>
@@ -98,6 +118,10 @@
             <device>wavdevice</device>
             <uri>AM-tone_fc-1000_fm-4.00_md-0.98_SPL-70_w-25_fs-44100_N-262144.wav</uri>
         </datablock>
+        <datablock id="datablockref2">
+            <device>wavdevice</device>
+            <uri>AM-tone_fc-1000_fm-0.50_md-0.98_SPL-70_w-25_fs-44100_N-262144.wav</uri>
+        </datablock>
         <datablock id="datablock1">
             <device>wavdevice</device>
             <uri>AM-tone_fc-1000_fm-0.50_md-0.98_SPL-70_w-25_fs-44100_N-262144.wav</uri>
@@ -141,6 +165,13 @@
             <datablocks>
                 <sequential>
                     <datablock id="datablockref1"/>
+                </sequential>
+            </datablocks>
+        </stimulus>
+        <stimulus id="stimref2">
+            <datablocks>
+                <sequential>
+                    <datablock id="datablockref2"/>
                 </sequential>
             </datablocks>
         </stimulus>
