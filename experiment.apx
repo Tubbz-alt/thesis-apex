@@ -8,7 +8,7 @@
         </parameters> 
         <procedure xsi:type="apex:constantProcedureType" id="procedure1">
             <parameters>
-                <presentations>1</presentations>
+                <presentations>4</presentations>
                 <order>random</order>
                 <choices>2</choices>
                 <pause_between_stimuli>800</pause_between_stimuli>
@@ -23,7 +23,7 @@
         </procedure>
         <procedure xsi:type="apex:constantProcedureType" id="procedure2">
             <parameters>
-                <presentations>1</presentations>
+                <presentations>4</presentations>
                 <order>random</order>
                 <choices>2</choices>
                 <pause_between_stimuli>800</pause_between_stimuli>
