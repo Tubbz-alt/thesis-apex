@@ -174,6 +174,10 @@
     </screens>
     <datablocks>
         <uri_prefix>file:e://TestTones</uri_prefix>
+        <datablock id="datablockcaltone">
+            <device>wavdevice</device>
+            <uri>tone_fc=1000_SPL=0_f=-44100_N=441000.wav</uri>
+        </datablock>
         <datablock id="datablockref1">
             <device>wavdevice</device>
             <uri>AM-tone_fc-1000_fm-4.00_md-0.98_SPL-70_w-25_fs-44100_N-262144.wav</uri>
@@ -219,8 +223,22 @@
             <samplerate>44100</samplerate>
         </device>
     </devices>
+    <filters>
+        <filter xsi:type="apex:amplifier" id="ampMain">
+            <device>wavdevice</device>
+            <channels>1</channels>
+            <gain channel="0" id="gain0">0.0</gain>
+        </filter>
+    </filters>
     <stimuli>
         <fixed_parameters/>
+        <stimulus id="stimcaltone">
+            <datablocks>
+                <sequential>
+                    <datablock id="datablockcaltone"/>
+                </sequential>
+            </datablocks>
+        </stimulus>
         <stimulus id="stimref1">
             <datablocks>
                 <sequential>
@@ -285,6 +303,41 @@
             </datablocks>
         </stimulus>
     </stimuli>
+    <connections>
+        <connection>
+            <from>
+                <id>_ALL_</id>
+                <channel>0</channel>
+            </from>
+            <to>
+                <id>ampMain</id>
+                <channel>0</channel>
+            </to>
+        </connection>
+        <connection>
+            <from>
+                <id>ampMain</id>
+                <channel>0</channel>
+            </from>
+            <to>
+                <id>wavdevice</id>
+                <channel>0</channel>
+            </to>
+        </connection>
+    </connections>
+    <calibration profile="calprofile1">
+        <stimuli>
+            <stimulus id="stimcaltone"/>
+        </stimuli>
+        <parameters>
+            <parameter id="gain0">
+                <targetamplitude>60</targetamplitude>
+                <calibrationamplitude>65</calibrationamplitude>
+                <mute>-150.0</mute>
+                <max>50</max>
+            </parameter>
+        </parameters>
+    </calibration>
     <results>
         <xsltscript>apexresult.xsl</xsltscript>
         <saveprocessedresults>true</saveprocessedresults>
