@@ -4,8 +4,8 @@
  xmlns:apex="http://med.kuleuven.be/exporl/apex/3.0.4/experiment" version="1">
     <procedure xsi:type="apex:multiProcedureType">
         <parameters>
-            <order>random</order> 
-        </parameters> 
+            <order>random</order>
+        </parameters>
         <procedure xsi:type="apex:constantProcedureType" id="procedure1">
             <parameters>
                 <presentations>4</presentations>
@@ -180,39 +180,39 @@
         </datablock>
         <datablock id="datablockref1">
             <device>wavdevice</device>
-            <uri>AM-tone_fc-1000_fm-4.00_md-0.98_SPL-70_w-25_fs-44100_N-262144.wav</uri>
+            <uri>AM-tone_fc-1000_fm-4.00_md-0.98_SPL-70_w-25_fs-44100_N-88200.wav</uri>
         </datablock>
         <datablock id="datablockref2">
             <device>wavdevice</device>
-            <uri>AM-tone_fc-1000_fm-0.50_md-0.98_SPL-70_w-25_fs-44100_N-262144.wav</uri>
+            <uri>AM-tone_fc-1000_fm-0.50_md-0.98_SPL-70_w-25_fs-44100_N-264600.wav</uri>
         </datablock>
         <datablock id="datablock1">
             <device>wavdevice</device>
-            <uri>AM-tone_fc-1000_fm-0.50_md-0.98_SPL-70_w-25_fs-44100_N-262144.wav</uri>
+            <uri>AM-tone_fc-1000_fm-0.50_md-0.98_SPL-70_w-25_fs-44100_N-264600.wav</uri>
         </datablock>
         <datablock id="datablock2">
             <device>wavdevice</device>
-            <uri>AM-tone_fc-1000_fm-1.00_md-0.98_SPL-70_w-25_fs-44100_N-262144.wav</uri>
+            <uri>AM-tone_fc-1000_fm-1.00_md-0.98_SPL-70_w-25_fs-44100_N-132300.wav</uri>
         </datablock>
         <datablock id="datablock3">
             <device>wavdevice</device>
-            <uri>AM-tone_fc-1000_fm-2.00_md-0.98_SPL-70_w-25_fs-44100_N-262144.wav</uri>
+            <uri>AM-tone_fc-1000_fm-2.00_md-0.98_SPL-70_w-25_fs-44100_N-88200.wav</uri>
         </datablock>
         <datablock id="datablock4">
             <device>wavdevice</device>
-            <uri>AM-tone_fc-1000_fm-4.00_md-0.98_SPL-70_w-25_fs-44100_N-262144.wav</uri>
+            <uri>AM-tone_fc-1000_fm-4.00_md-0.98_SPL-70_w-25_fs-44100_N-88200.wav</uri>
         </datablock>
         <datablock id="datablock5">
             <device>wavdevice</device>
-            <uri>AM-tone_fc-1000_fm-8.00_md-0.98_SPL-70_w-25_fs-44100_N-262144.wav</uri>
+            <uri>AM-tone_fc-1000_fm-8.00_md-0.98_SPL-70_w-25_fs-44100_N-88200.wav</uri>
         </datablock>
         <datablock id="datablock6">
             <device>wavdevice</device>
-            <uri>AM-tone_fc-1000_fm-16.00_md-0.98_SPL-70_w-25_fs-44100_N-262144.wav</uri>
+            <uri>AM-tone_fc-1000_fm-16.00_md-0.98_SPL-70_w-25_fs-44100_N-88200.wav</uri>
         </datablock>
         <datablock id="datablock7">
             <device>wavdevice</device>
-            <uri>AM-tone_fc-1000_fm-32.00_md-0.98_SPL-70_w-25_fs-44100_N-262144.wav</uri>
+            <uri>AM-tone_fc-1000_fm-32.00_md-0.98_SPL-70_w-25_fs-44100_N-88200.wav</uri>
         </datablock>
     </datablocks>
     <devices>
