@@ -1,0 +1,1891 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet  href="https://gilbert.med.kuleuven.be/apex/xslt/apexresult.xsl" type="text/xsl"?>
+<apex:results experiment_file="file:/D:/Documenten-TUe/02-Experiments/2015-APEX-my-experiments/Experiments/Roughness/Daniel1997_Fig3_multiprocedure01.xml" xmlns:apex="http://med.kuleuven.be/exporl/apex/result">
+<general>
+	<startdate>2015-03-06T12:59:13</startdate>
+	<enddate>2015-03-06T13:07:18</enddate>
+	<duration unit="seconds">484</duration>
+	<xsltscript>apexresult.xsl</xsltscript>
+	<subject>AO</subject>
+	<interactive>
+		<entry expression="/apex:apex/results[1]/subject[1]" new_value="AO" succeeded="true" />
+	</interactive>
+</general>
+<trial id="trial_26">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T12:59:13</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest26</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button17</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>7</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>816</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_16">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T12:59:18</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest16</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button16</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>6</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1121</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_12">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T12:59:23</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest12</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button17</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>7</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>2678</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_22">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T12:59:30</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest22</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button16</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>6</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1492</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_14">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T12:59:35</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest14</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button15</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>5</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1801</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_13">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T12:59:44</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest13</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button14</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>4</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1710</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_24">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:00:00</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest24</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button14</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>4</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1421</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_12">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:00:05</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest12</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button18</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>8</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>2297</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_15">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:00:17</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest15</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button15</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>5</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1709</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_23">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:00:23</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest23</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button13</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>3</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>2210</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_14">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:00:29</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest14</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button15</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>5</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>585</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_22">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:00:42</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest22</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button16</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>6</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>905</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_15">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:00:50</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest15</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button16</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>6</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>996</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_25">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:01:03</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest25</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button14</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>4</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>895</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_14">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:01:07</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest14</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button15</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>5</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>453</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_17">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:01:12</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest17</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button17</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>7</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>516</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_16">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:01:16</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest16</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button16</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>6</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>591</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_24">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:01:25</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest24</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button13</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>3</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1802</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_25">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:01:39</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest25</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button16</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>6</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>922</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_24">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:01:52</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest24</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button15</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>5</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>553</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_27">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:01:57</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest27</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button12</element>
+</screenresult>
+<corrector>
+<result>true</result>
+<answer>2</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>3571</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_26">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:02:11</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest26</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button17</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>7</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1432</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_13">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:02:20</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest13</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button16</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>6</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1173</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_18">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:02:31</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest18</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button17</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>7</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>2781</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_23">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:02:42</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest23</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button15</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>5</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>705</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_28">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:02:46</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest28</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button17</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>7</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>3427</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_13">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:02:54</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest13</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button17</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>7</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1880</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_15">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:03:00</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest15</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button15</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>5</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1715</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_11">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:03:15</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest11</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button18</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>8</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>85</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_12">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:03:23</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest12</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button17</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>7</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>585</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_23">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:03:35</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest23</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button16</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>6</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>601</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_25">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:03:47</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest25</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button16</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>6</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>743</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_21">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:03:52</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest21</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button19</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>9</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>2457</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_22">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:04:02</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest22</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button17</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>7</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1447</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_24">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:04:07</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest24</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button15</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>5</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>747</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_27">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:04:12</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest27</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button12</element>
+</screenresult>
+<corrector>
+<result>true</result>
+<answer>2</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>2805</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_14">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:04:19</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest14</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button15</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>5</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>992</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_17">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:04:24</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest17</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button16</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>6</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>2067</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_18">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:04:30</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest18</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button17</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>7</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>310</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_28">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:04:34</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest28</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button12</element>
+</screenresult>
+<corrector>
+<result>true</result>
+<answer>2</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1520</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_26">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:04:47</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest26</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button17</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>7</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1219</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_28">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:04:52</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest28</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button13</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>3</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1263</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_21">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:04:58</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest21</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button18</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>8</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1466</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_16">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:05:03</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest16</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button16</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>6</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>663</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_23">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:05:15</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest23</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button16</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>6</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>260</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_28">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:05:20</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest28</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button14</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>4</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1198</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_27">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:05:29</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest27</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button13</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>3</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1349</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_27">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:05:38</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest27</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button17</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>7</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>546</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_21">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:05:43</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest21</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button18</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>8</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>2019</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_21">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:05:49</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest21</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button19</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>9</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>646</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_25">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:05:59</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest25</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button16</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>6</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>640</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_18">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:06:04</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest18</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button17</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>7</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>469</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_11">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:06:08</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest11</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button18</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>8</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1716</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_26">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:06:18</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest26</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button17</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>7</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>476</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_22">
+<procedure id="procedure2">
+<trial_start_time>2015-03-06T13:06:22</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest22</stimulus>
+<standard>stimref2</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button14</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>4</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>881</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_13">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:06:27</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest13</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button15</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>5</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>755</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_18">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:06:32</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest18</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button17</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>7</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>578</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_17">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:06:37</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest17</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button18</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>8</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>141</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_17">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:06:41</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest17</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button16</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>6</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1008</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_11">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:06:46</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest11</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button18</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>8</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1305</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_11">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:06:51</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest11</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button18</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>8</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>2171</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_15">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:07:02</trial_start_time>
+<correct_answer>1</correct_answer>
+<stimulus>stimtest15</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button16</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>6</answer>
+<correctanswer>1</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1767</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_16">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:07:08</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest16</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button17</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>7</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>1305</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<trial id="trial_12">
+<procedure id="procedure1">
+<trial_start_time>2015-03-06T13:07:13</trial_start_time>
+<correct_answer>2</correct_answer>
+<stimulus>stimtest12</stimulus>
+<standard>stimref1</standard>
+</procedure>
+<screenresult>
+	<element id="btgrp1">button13</element>
+</screenresult>
+<corrector>
+<result>false</result>
+<answer>3</answer>
+<correctanswer>2</correctanswer>
+</corrector>
+<output>
+<device id="wavdevice">
+  <buffer underruns="0"/>
+  <buffer underruns="0"/>
+</device>
+</output>
+<responsetime unit='ms'>980</responsetime>
+<randomgenerators>
+
+</randomgenerators>
+</trial>
+
+<calibration>
+<parameter id="gain0">0</parameter>
+</calibration>
+<processed>
+
+
+ExperimentFile=file:/D:/Documenten-TUe/02-Experiments/2015-APEX-my-experiments/Experiments/Roughness/Daniel1997_Fig3_multiprocedure01.xml
+Duration=484 seconds
+Header=procedure;trial;stimulus;correctanswer;corrector;useranswer
+START
+procedure2;trial_26;stimtest26;2;false;7
+procedure1;trial_16;stimtest16;2;false;6
+procedure1;trial_12;stimtest12;1;false;7
+procedure2;trial_22;stimtest22;1;false;6
+procedure1;trial_14;stimtest14;1;false;5
+procedure1;trial_13;stimtest13;2;false;4
+procedure2;trial_24;stimtest24;1;false;4
+procedure1;trial_12;stimtest12;1;false;8
+procedure1;trial_15;stimtest15;1;false;5
+procedure2;trial_23;stimtest23;2;false;3
+procedure1;trial_14;stimtest14;2;false;5
+procedure2;trial_22;stimtest22;1;false;6
+procedure1;trial_15;stimtest15;1;false;6
+procedure2;trial_25;stimtest25;1;false;4
+procedure1;trial_14;stimtest14;1;false;5
+procedure1;trial_17;stimtest17;2;false;7
+procedure1;trial_16;stimtest16;1;false;6
+procedure2;trial_24;stimtest24;2;false;3
+procedure2;trial_25;stimtest25;1;false;6
+procedure2;trial_24;stimtest24;1;false;5
+procedure2;trial_27;stimtest27;2;true;2
+procedure2;trial_26;stimtest26;1;false;7
+procedure1;trial_13;stimtest13;2;false;6
+procedure1;trial_18;stimtest18;1;false;7
+procedure2;trial_23;stimtest23;2;false;5
+procedure2;trial_28;stimtest28;1;false;7
+procedure1;trial_13;stimtest13;2;false;7
+procedure1;trial_15;stimtest15;1;false;5
+procedure1;trial_11;stimtest11;1;false;8
+procedure1;trial_12;stimtest12;1;false;7
+procedure2;trial_23;stimtest23;2;false;6
+procedure2;trial_25;stimtest25;1;false;6
+procedure2;trial_21;stimtest21;1;false;9
+procedure2;trial_22;stimtest22;1;false;7
+procedure2;trial_24;stimtest24;2;false;5
+procedure2;trial_27;stimtest27;2;true;2
+procedure1;trial_14;stimtest14;2;false;5
+procedure1;trial_17;stimtest17;2;false;6
+procedure1;trial_18;stimtest18;2;false;7
+procedure2;trial_28;stimtest28;2;true;2
+procedure2;trial_26;stimtest26;2;false;7
+procedure2;trial_28;stimtest28;2;false;3
+procedure2;trial_21;stimtest21;1;false;8
+procedure1;trial_16;stimtest16;2;false;6
+procedure2;trial_23;stimtest23;1;false;6
+procedure2;trial_28;stimtest28;2;false;4
+procedure2;trial_27;stimtest27;2;false;3
+procedure2;trial_27;stimtest27;1;false;7
+procedure2;trial_21;stimtest21;1;false;8
+procedure2;trial_21;stimtest21;1;false;9
+procedure2;trial_25;stimtest25;1;false;6
+procedure1;trial_18;stimtest18;2;false;7
+procedure1;trial_11;stimtest11;1;false;8
+procedure2;trial_26;stimtest26;2;false;7
+procedure2;trial_22;stimtest22;2;false;4
+procedure1;trial_13;stimtest13;1;false;5
+procedure1;trial_18;stimtest18;2;false;7
+procedure1;trial_17;stimtest17;2;false;8
+procedure1;trial_17;stimtest17;1;false;6
+procedure1;trial_11;stimtest11;1;false;8
+procedure1;trial_11;stimtest11;1;false;8
+procedure1;trial_15;stimtest15;1;false;6
+procedure1;trial_16;stimtest16;2;false;7
+procedure1;trial_12;stimtest12;2;false;3
+END
+
+</processed>
+</apex:results>
