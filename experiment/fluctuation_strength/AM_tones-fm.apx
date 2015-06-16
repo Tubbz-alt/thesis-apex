@@ -219,15 +219,16 @@
         <device id="wavdevice" xsi:type="apex:wavDeviceType">
             <driver>portaudio</driver>
             <card>default</card>
-            <channels>1</channels>
+            <channels>2</channels>
             <samplerate>44100</samplerate>
         </device>
     </devices>
     <filters>
         <filter xsi:type="apex:amplifier" id="ampMain">
             <device>wavdevice</device>
-            <channels>1</channels>
+            <channels>2</channels>
             <gain channel="0" id="gain0">0.0</gain>
+            <gain channel="1" id="gain1">0.0</gain>
         </filter>
     </filters>
     <stimuli>
@@ -316,12 +317,32 @@
         </connection>
         <connection>
             <from>
+                <id>_ALL_</id>
+                <channel>0</channel>
+            </from>
+            <to>
+                <id>ampMain</id>
+                <channel>1</channel>
+            </to>
+        </connection>
+        <connection>
+            <from>
                 <id>ampMain</id>
                 <channel>0</channel>
             </from>
             <to>
                 <id>wavdevice</id>
                 <channel>0</channel>
+            </to>
+        </connection>
+        <connection>
+            <from>
+                <id>ampMain</id>
+                <channel>1</channel>
+            </from>
+            <to>
+                <id>wavdevice</id>
+                <channel>1</channel>
             </to>
         </connection>
     </connections>
