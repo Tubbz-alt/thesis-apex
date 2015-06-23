@@ -176,7 +176,7 @@
         <uri_prefix source="apexconfig">stimuli</uri_prefix>
         <datablock id="datablockcaltone">
             <device>wavdevice</device>
-            <uri>tone-fc_1000-SPL_0-fs_44100-N_441000.wav</uri>
+            <uri>tone-fc_1000-SPL_0-fs_44100-N_352800.wav</uri>
         </datablock>
         <datablock id="datablockref1">
             <device>wavdevice</device>
