@@ -1,0 +1,717 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<apex:apex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://med.kuleuven.be/exporl/apex/3.0.2/experiment https://gilbert.med.kuleuven.be/apex/schemas/3.0.2/experiment.xsd"
+  xmlns:apex="http://med.kuleuven.be/exporl/apex/3.0.2/experiment"
+  version="1">
+
+<!--  
+Training procedure for acoustic stimuli 'a3testacstimuli':
+          Description: 
+Template to generate a training procedure in APEX 3, diotic presentation. Run the MATLAB script a3testacstimuli.m specifying as input parameter the path where the audio files are
+
+    % Programmed by APEX3 team, 
+    % Adapted by Alejandro Osses V., HTI, TU/e, the Netherlands, 2015
+    % Created on    : 2013-2014
+    % Last update on: 11/06/2015 % Update this date manually
+    % Last use on   : 15/06/2015 % Update this date manually
+  -->
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    
+  <procedure xsi:type="apex:trainingProcedureType">
+    <parameters>
+      <presentations>100</presentations>
+      <skip>0</skip>
+      <order>sequential</order>
+    </parameters>
+    
+    <trials>
+      <trial id="ttone-0125Hz-Amp-010">
+	<answer>buttontone-0125Hz-Amp-010</answer>
+	<screen id="screen"/>
+	<stimulus id="stone-0125Hz-Amp-010"/>
+</trial>
+<trial id="ttone-0125Hz-Amp-050">
+	<answer>buttontone-0125Hz-Amp-050</answer>
+	<screen id="screen"/>
+	<stimulus id="stone-0125Hz-Amp-050"/>
+</trial>
+<trial id="ttone-0125Hz-Amp-100">
+	<answer>buttontone-0125Hz-Amp-100</answer>
+	<screen id="screen"/>
+	<stimulus id="stone-0125Hz-Amp-100"/>
+</trial>
+<trial id="ttone-0250Hz-Amp-010">
+	<answer>buttontone-0250Hz-Amp-010</answer>
+	<screen id="screen"/>
+	<stimulus id="stone-0250Hz-Amp-010"/>
+</trial>
+<trial id="ttone-0250Hz-Amp-050">
+	<answer>buttontone-0250Hz-Amp-050</answer>
+	<screen id="screen"/>
+	<stimulus id="stone-0250Hz-Amp-050"/>
+</trial>
+<trial id="ttone-0250Hz-Amp-100">
+	<answer>buttontone-0250Hz-Amp-100</answer>
+	<screen id="screen"/>
+	<stimulus id="stone-0250Hz-Amp-100"/>
+</trial>
+<trial id="ttone-0500Hz-Amp-010">
+	<answer>buttontone-0500Hz-Amp-010</answer>
+	<screen id="screen"/>
+	<stimulus id="stone-0500Hz-Amp-010"/>
+</trial>
+<trial id="ttone-0500Hz-Amp-050">
+	<answer>buttontone-0500Hz-Amp-050</answer>
+	<screen id="screen"/>
+	<stimulus id="stone-0500Hz-Amp-050"/>
+</trial>
+<trial id="ttone-0500Hz-Amp-100">
+	<answer>buttontone-0500Hz-Amp-100</answer>
+	<screen id="screen"/>
+	<stimulus id="stone-0500Hz-Amp-100"/>
+</trial>
+<trial id="ttone-1000Hz-Amp-010">
+	<answer>buttontone-1000Hz-Amp-010</answer>
+	<screen id="screen"/>
+	<stimulus id="stone-1000Hz-Amp-010"/>
+</trial>
+<trial id="ttone-1000Hz-Amp-050">
+	<answer>buttontone-1000Hz-Amp-050</answer>
+	<screen id="screen"/>
+	<stimulus id="stone-1000Hz-Amp-050"/>
+</trial>
+<trial id="ttone-1000Hz-Amp-100">
+	<answer>buttontone-1000Hz-Amp-100</answer>
+	<screen id="screen"/>
+	<stimulus id="stone-1000Hz-Amp-100"/>
+</trial>
+<trial id="ttone-2000Hz-Amp-010">
+	<answer>buttontone-2000Hz-Amp-010</answer>
+	<screen id="screen"/>
+	<stimulus id="stone-2000Hz-Amp-010"/>
+</trial>
+<trial id="ttone-2000Hz-Amp-050">
+	<answer>buttontone-2000Hz-Amp-050</answer>
+	<screen id="screen"/>
+	<stimulus id="stone-2000Hz-Amp-050"/>
+</trial>
+<trial id="ttone-2000Hz-Amp-100">
+	<answer>buttontone-2000Hz-Amp-100</answer>
+	<screen id="screen"/>
+	<stimulus id="stone-2000Hz-Amp-100"/>
+</trial>
+<trial id="ttone-4000Hz-Amp-010">
+	<answer>buttontone-4000Hz-Amp-010</answer>
+	<screen id="screen"/>
+	<stimulus id="stone-4000Hz-Amp-010"/>
+</trial>
+<trial id="ttone-4000Hz-Amp-050">
+	<answer>buttontone-4000Hz-Amp-050</answer>
+	<screen id="screen"/>
+	<stimulus id="stone-4000Hz-Amp-050"/>
+</trial>
+<trial id="ttone-4000Hz-Amp-100">
+	<answer>buttontone-4000Hz-Amp-100</answer>
+	<screen id="screen"/>
+	<stimulus id="stone-4000Hz-Amp-100"/>
+</trial>
+<trial id="ttone-8000Hz-Amp-010">
+	<answer>buttontone-8000Hz-Amp-010</answer>
+	<screen id="screen"/>
+	<stimulus id="stone-8000Hz-Amp-010"/>
+</trial>
+<trial id="ttone-8000Hz-Amp-050">
+	<answer>buttontone-8000Hz-Amp-050</answer>
+	<screen id="screen"/>
+	<stimulus id="stone-8000Hz-Amp-050"/>
+</trial>
+<trial id="ttone-8000Hz-Amp-100">
+	<answer>buttontone-8000Hz-Amp-100</answer>
+	<screen id="screen"/>
+	<stimulus id="stone-8000Hz-Amp-100"/>
+</trial>
+
+    </trials>
+  </procedure>
+  
+  
+    <corrector xsi:type="apex:isequal"/>
+    
+    <screens>
+<screen id="screen" >
+<gridLayout width="1" height="2" rowstretch="1,10">
+    <gridLayout width="2" height="1" x="1" y="1">
+      <label id="aclabel" x="1" y="1">
+        <text>Ac (dB)</text>
+      </label>
+      <spinBox id="acspin" x="2" y="1">
+        <value>0</value>
+        <min>-50</min>
+        <max>20</max>
+        <step>5</step>
+        <parameter>gainLR</parameter>
+      </spinBox>
+      
+       
+    </gridLayout>
+        <gridLayout height="7" width="3" id="buttonlayout" col="1" row="2">
+<button row="1" col="1" id="buttontone-0125Hz-Amp-010">
+	<text>125 Hz, -20 dB</text>
+</button>
+
+<button row="1" col="2" id="buttontone-0125Hz-Amp-050">
+	<text>125 Hz, -6 dB</text>
+</button>
+
+<button row="1" col="3" id="buttontone-0125Hz-Amp-100">
+	<text>125 Hz, 0 dB</text>
+</button>
+
+<button row="2" col="1" id="buttontone-0250Hz-Amp-010">
+	<text>250 Hz, -20 dB</text>
+</button>
+
+<button row="2" col="2" id="buttontone-0250Hz-Amp-050">
+	<text>250 Hz, -6 dB</text>
+</button>
+
+<button row="2" col="3" id="buttontone-0250Hz-Amp-100">
+	<text>250 Hz, 0 dB</text>
+</button>
+
+<button row="3" col="1" id="buttontone-0500Hz-Amp-010">
+	<text>500 Hz, -20 dB</text>
+</button>
+
+<button row="3" col="2" id="buttontone-0500Hz-Amp-050">
+	<text>500 Hz, -6 dB</text>
+</button>
+
+<button row="3" col="3" id="buttontone-0500Hz-Amp-100">
+	<text>500 Hz, 0 dB</text>
+</button>
+
+<button row="4" col="1" id="buttontone-1000Hz-Amp-010">
+	<text>1000 Hz, -20 dB</text>
+</button>
+
+<button row="4" col="2" id="buttontone-1000Hz-Amp-050">
+	<text>1000 Hz, -6 dB</text>
+</button>
+
+<button row="4" col="3" id="buttontone-1000Hz-Amp-100">
+	<text>1000 Hz, 0 dB</text>
+</button>
+
+<button row="5" col="1" id="buttontone-2000Hz-Amp-010">
+	<text>2000 Hz, -20 dB</text>
+</button>
+
+<button row="5" col="2" id="buttontone-2000Hz-Amp-050">
+	<text>2000 Hz, -6 dB</text>
+</button>
+
+<button row="5" col="3" id="buttontone-2000Hz-Amp-100">
+	<text>2000 Hz, 0 dB</text>
+</button>
+
+<button row="6" col="1" id="buttontone-4000Hz-Amp-010">
+	<text>4000 Hz, -20 dB</text>
+</button>
+
+<button row="6" col="2" id="buttontone-4000Hz-Amp-050">
+	<text>4000 Hz, -6 dB</text>
+</button>
+
+<button row="6" col="3" id="buttontone-4000Hz-Amp-100">
+	<text>4000 Hz, 0 dB</text>
+</button>
+
+<button row="7" col="1" id="buttontone-8000Hz-Amp-010">
+	<text>8000 Hz, -20 dB</text>
+</button>
+
+<button row="7" col="2" id="buttontone-8000Hz-Amp-050">
+	<text>8000 Hz, -6 dB</text>
+</button>
+
+<button row="7" col="3" id="buttontone-8000Hz-Amp-100">
+	<text>8000 Hz, 0 dB</text>
+</button>
+
+</gridLayout>
+
+
+    </gridLayout>
+
+        <buttongroup id="buttongroup">
+<button id="buttontone-0125Hz-Amp-010"/>
+<button id="buttontone-0125Hz-Amp-050"/>
+<button id="buttontone-0125Hz-Amp-100"/>
+<button id="buttontone-0250Hz-Amp-010"/>
+<button id="buttontone-0250Hz-Amp-050"/>
+<button id="buttontone-0250Hz-Amp-100"/>
+<button id="buttontone-0500Hz-Amp-010"/>
+<button id="buttontone-0500Hz-Amp-050"/>
+<button id="buttontone-0500Hz-Amp-100"/>
+<button id="buttontone-1000Hz-Amp-010"/>
+<button id="buttontone-1000Hz-Amp-050"/>
+<button id="buttontone-1000Hz-Amp-100"/>
+<button id="buttontone-2000Hz-Amp-010"/>
+<button id="buttontone-2000Hz-Amp-050"/>
+<button id="buttontone-2000Hz-Amp-100"/>
+<button id="buttontone-4000Hz-Amp-010"/>
+<button id="buttontone-4000Hz-Amp-050"/>
+<button id="buttontone-4000Hz-Amp-100"/>
+<button id="buttontone-8000Hz-Amp-010"/>
+<button id="buttontone-8000Hz-Amp-050"/>
+<button id="buttontone-8000Hz-Amp-100"/>
+</buttongroup>
+<default_answer_element>buttongroup</default_answer_element>
+
+
+    </screen>
+    </screens>
+    
+  
+ <datablocks>
+   <uri_prefix>.</uri_prefix>
+ <datablock id="dtone-0125Hz-Amp-010">
+	<device>wavdevice</device>
+	<uri>tone-0125Hz-Amp-010.wav</uri>
+</datablock>
+<datablock id="dtone-0125Hz-Amp-050">
+	<device>wavdevice</device>
+	<uri>tone-0125Hz-Amp-050.wav</uri>
+</datablock>
+<datablock id="dtone-0125Hz-Amp-100">
+	<device>wavdevice</device>
+	<uri>tone-0125Hz-Amp-100.wav</uri>
+</datablock>
+<datablock id="dtone-0250Hz-Amp-010">
+	<device>wavdevice</device>
+	<uri>tone-0250Hz-Amp-010.wav</uri>
+</datablock>
+<datablock id="dtone-0250Hz-Amp-050">
+	<device>wavdevice</device>
+	<uri>tone-0250Hz-Amp-050.wav</uri>
+</datablock>
+<datablock id="dtone-0250Hz-Amp-100">
+	<device>wavdevice</device>
+	<uri>tone-0250Hz-Amp-100.wav</uri>
+</datablock>
+<datablock id="dtone-0500Hz-Amp-010">
+	<device>wavdevice</device>
+	<uri>tone-0500Hz-Amp-010.wav</uri>
+</datablock>
+<datablock id="dtone-0500Hz-Amp-050">
+	<device>wavdevice</device>
+	<uri>tone-0500Hz-Amp-050.wav</uri>
+</datablock>
+<datablock id="dtone-0500Hz-Amp-100">
+	<device>wavdevice</device>
+	<uri>tone-0500Hz-Amp-100.wav</uri>
+</datablock>
+<datablock id="dtone-1000Hz-Amp-010">
+	<device>wavdevice</device>
+	<uri>tone-1000Hz-Amp-010.wav</uri>
+</datablock>
+<datablock id="dtone-1000Hz-Amp-050">
+	<device>wavdevice</device>
+	<uri>tone-1000Hz-Amp-050.wav</uri>
+</datablock>
+<datablock id="dtone-1000Hz-Amp-100">
+	<device>wavdevice</device>
+	<uri>tone-1000Hz-Amp-100.wav</uri>
+</datablock>
+<datablock id="dtone-2000Hz-Amp-010">
+	<device>wavdevice</device>
+	<uri>tone-2000Hz-Amp-010.wav</uri>
+</datablock>
+<datablock id="dtone-2000Hz-Amp-050">
+	<device>wavdevice</device>
+	<uri>tone-2000Hz-Amp-050.wav</uri>
+</datablock>
+<datablock id="dtone-2000Hz-Amp-100">
+	<device>wavdevice</device>
+	<uri>tone-2000Hz-Amp-100.wav</uri>
+</datablock>
+<datablock id="dtone-4000Hz-Amp-010">
+	<device>wavdevice</device>
+	<uri>tone-4000Hz-Amp-010.wav</uri>
+</datablock>
+<datablock id="dtone-4000Hz-Amp-050">
+	<device>wavdevice</device>
+	<uri>tone-4000Hz-Amp-050.wav</uri>
+</datablock>
+<datablock id="dtone-4000Hz-Amp-100">
+	<device>wavdevice</device>
+	<uri>tone-4000Hz-Amp-100.wav</uri>
+</datablock>
+<datablock id="dtone-8000Hz-Amp-010">
+	<device>wavdevice</device>
+	<uri>tone-8000Hz-Amp-010.wav</uri>
+</datablock>
+<datablock id="dtone-8000Hz-Amp-050">
+	<device>wavdevice</device>
+	<uri>tone-8000Hz-Amp-050.wav</uri>
+</datablock>
+<datablock id="dtone-8000Hz-Amp-100">
+	<device>wavdevice</device>
+	<uri>tone-8000Hz-Amp-100.wav</uri>
+</datablock>
+
+   
+</datablocks>
+
+  <devices>
+    <device id="wavdevice" xsi:type="apex:wavDeviceType">
+      <driver>portaudio</driver>
+      <card>default</card>
+      <channels>2</channels>
+      <gain channel="0">0</gain>
+      <gain channel="1">0</gain>
+      <samplerate>44100</samplerate>
+      <!-- <buffersize>4096</buffersize> -->
+    </device>
+  </devices>
+  
+  
+    <filters>
+      <filter xsi:type="apex:amplifier" id="ampOverallGain">
+        <device>wavdevice</device>
+        <channels>1</channels>
+        <gain channel="0" id="gainLR">0.0</gain>
+      </filter>
+      <filter xsi:type="apex:amplifier" id="ampMain">
+        <device>wavdevice</device>
+        <channels>2</channels>
+        <gain channel="0" id="gain0">0.0</gain>
+        <gain channel="1" id="gain1">0.0</gain>
+      </filter>
+    </filters>
+  
+  <stimuli>
+      <fixed_parameters/>
+   <stimulus id="stone-0125Hz-Amp-010">
+	<datablocks>
+	<sequential>
+		<datablock id="dtone-0125Hz-Amp-010"/>
+	</sequential>
+	</datablocks>
+	<variableParameters>
+		</variableParameters>
+	<fixedParameters>
+		</fixedParameters>
+</stimulus>
+<stimulus id="stone-0125Hz-Amp-050">
+	<datablocks>
+	<sequential>
+		<datablock id="dtone-0125Hz-Amp-050"/>
+	</sequential>
+	</datablocks>
+	<variableParameters>
+		</variableParameters>
+	<fixedParameters>
+		</fixedParameters>
+</stimulus>
+<stimulus id="stone-0125Hz-Amp-100">
+	<datablocks>
+	<sequential>
+		<datablock id="dtone-0125Hz-Amp-100"/>
+	</sequential>
+	</datablocks>
+	<variableParameters>
+		</variableParameters>
+	<fixedParameters>
+		</fixedParameters>
+</stimulus>
+<stimulus id="stone-0250Hz-Amp-010">
+	<datablocks>
+	<sequential>
+		<datablock id="dtone-0250Hz-Amp-010"/>
+	</sequential>
+	</datablocks>
+	<variableParameters>
+		</variableParameters>
+	<fixedParameters>
+		</fixedParameters>
+</stimulus>
+<stimulus id="stone-0250Hz-Amp-050">
+	<datablocks>
+	<sequential>
+		<datablock id="dtone-0250Hz-Amp-050"/>
+	</sequential>
+	</datablocks>
+	<variableParameters>
+		</variableParameters>
+	<fixedParameters>
+		</fixedParameters>
+</stimulus>
+<stimulus id="stone-0250Hz-Amp-100">
+	<datablocks>
+	<sequential>
+		<datablock id="dtone-0250Hz-Amp-100"/>
+	</sequential>
+	</datablocks>
+	<variableParameters>
+		</variableParameters>
+	<fixedParameters>
+		</fixedParameters>
+</stimulus>
+<stimulus id="stone-0500Hz-Amp-010">
+	<datablocks>
+	<sequential>
+		<datablock id="dtone-0500Hz-Amp-010"/>
+	</sequential>
+	</datablocks>
+	<variableParameters>
+		</variableParameters>
+	<fixedParameters>
+		</fixedParameters>
+</stimulus>
+<stimulus id="stone-0500Hz-Amp-050">
+	<datablocks>
+	<sequential>
+		<datablock id="dtone-0500Hz-Amp-050"/>
+	</sequential>
+	</datablocks>
+	<variableParameters>
+		</variableParameters>
+	<fixedParameters>
+		</fixedParameters>
+</stimulus>
+<stimulus id="stone-0500Hz-Amp-100">
+	<datablocks>
+	<sequential>
+		<datablock id="dtone-0500Hz-Amp-100"/>
+	</sequential>
+	</datablocks>
+	<variableParameters>
+		</variableParameters>
+	<fixedParameters>
+		</fixedParameters>
+</stimulus>
+<stimulus id="stone-1000Hz-Amp-010">
+	<datablocks>
+	<sequential>
+		<datablock id="dtone-1000Hz-Amp-010"/>
+	</sequential>
+	</datablocks>
+	<variableParameters>
+		</variableParameters>
+	<fixedParameters>
+		</fixedParameters>
+</stimulus>
+<stimulus id="stone-1000Hz-Amp-050">
+	<datablocks>
+	<sequential>
+		<datablock id="dtone-1000Hz-Amp-050"/>
+	</sequential>
+	</datablocks>
+	<variableParameters>
+		</variableParameters>
+	<fixedParameters>
+		</fixedParameters>
+</stimulus>
+<stimulus id="stone-1000Hz-Amp-100">
+	<datablocks>
+	<sequential>
+		<datablock id="dtone-1000Hz-Amp-100"/>
+	</sequential>
+	</datablocks>
+	<variableParameters>
+		</variableParameters>
+	<fixedParameters>
+		</fixedParameters>
+</stimulus>
+<stimulus id="stone-2000Hz-Amp-010">
+	<datablocks>
+	<sequential>
+		<datablock id="dtone-2000Hz-Amp-010"/>
+	</sequential>
+	</datablocks>
+	<variableParameters>
+		</variableParameters>
+	<fixedParameters>
+		</fixedParameters>
+</stimulus>
+<stimulus id="stone-2000Hz-Amp-050">
+	<datablocks>
+	<sequential>
+		<datablock id="dtone-2000Hz-Amp-050"/>
+	</sequential>
+	</datablocks>
+	<variableParameters>
+		</variableParameters>
+	<fixedParameters>
+		</fixedParameters>
+</stimulus>
+<stimulus id="stone-2000Hz-Amp-100">
+	<datablocks>
+	<sequential>
+		<datablock id="dtone-2000Hz-Amp-100"/>
+	</sequential>
+	</datablocks>
+	<variableParameters>
+		</variableParameters>
+	<fixedParameters>
+		</fixedParameters>
+</stimulus>
+<stimulus id="stone-4000Hz-Amp-010">
+	<datablocks>
+	<sequential>
+		<datablock id="dtone-4000Hz-Amp-010"/>
+	</sequential>
+	</datablocks>
+	<variableParameters>
+		</variableParameters>
+	<fixedParameters>
+		</fixedParameters>
+</stimulus>
+<stimulus id="stone-4000Hz-Amp-050">
+	<datablocks>
+	<sequential>
+		<datablock id="dtone-4000Hz-Amp-050"/>
+	</sequential>
+	</datablocks>
+	<variableParameters>
+		</variableParameters>
+	<fixedParameters>
+		</fixedParameters>
+</stimulus>
+<stimulus id="stone-4000Hz-Amp-100">
+	<datablocks>
+	<sequential>
+		<datablock id="dtone-4000Hz-Amp-100"/>
+	</sequential>
+	</datablocks>
+	<variableParameters>
+		</variableParameters>
+	<fixedParameters>
+		</fixedParameters>
+</stimulus>
+<stimulus id="stone-8000Hz-Amp-010">
+	<datablocks>
+	<sequential>
+		<datablock id="dtone-8000Hz-Amp-010"/>
+	</sequential>
+	</datablocks>
+	<variableParameters>
+		</variableParameters>
+	<fixedParameters>
+		</fixedParameters>
+</stimulus>
+<stimulus id="stone-8000Hz-Amp-050">
+	<datablocks>
+	<sequential>
+		<datablock id="dtone-8000Hz-Amp-050"/>
+	</sequential>
+	</datablocks>
+	<variableParameters>
+		</variableParameters>
+	<fixedParameters>
+		</fixedParameters>
+</stimulus>
+<stimulus id="stone-8000Hz-Amp-100">
+	<datablocks>
+	<sequential>
+		<datablock id="dtone-8000Hz-Amp-100"/>
+	</sequential>
+	</datablocks>
+	<variableParameters>
+		</variableParameters>
+	<fixedParameters>
+		</fixedParameters>
+</stimulus>
+
+   <stimulus id="calstimulus">
+	<datablocks>
+	<sequential>
+		<datablock id="dtone-1000Hz-Amp-100"/>
+	</sequential>
+	</datablocks>
+	<variableParameters>
+		</variableParameters>
+	<fixedParameters>
+		</fixedParameters>
+</stimulus>
+
+  </stimuli>
+  
+    <connections>
+      <connection>
+        <from>
+          <id>_ALL_</id>
+          <channel>0</channel>
+        </from>
+        <to>
+          <id>ampOverallGain</id>
+          <channel>0</channel>
+        </to>
+      </connection>
+      <connection>
+        <from>
+          <id>ampOverallGain</id>
+          <channel>0</channel>
+        </from>
+        <to>
+          <id>ampMain</id>
+          <channel>0</channel>
+        </to>
+      </connection>
+      <connection>
+        <from>
+          <id>ampOverallGain</id>
+          <channel>0</channel>
+        </from>
+        <to>
+          <id>ampMain</id>
+          <channel>1</channel>
+        </to>
+      </connection>
+
+      <connection>
+        <from>
+          <id>ampMain</id>
+          <channel>0</channel>
+        </from>
+        <to> 
+          <id>wavdevice</id>
+          <channel>0</channel>
+        </to> 
+      </connection>
+      <connection>
+        <from>
+          <id>ampMain</id>
+          <channel>1</channel>
+        </from>
+        <to> 
+          <id>wavdevice</id>
+          <channel>1</channel>
+        </to> 
+      </connection>
+    </connections>  
+    
+    <calibration profile="outs-2">
+      <stimuli>
+        <stimulus id="calstimulus"/>
+      </stimuli>
+      <parameters>
+        <parameter id="gain0">
+          <targetamplitude>97</targetamplitude>
+          <calibrationamplitude>97</calibrationamplitude>
+          <mute>-150.0</mute>
+          <max>50</max>
+        </parameter>
+        <parameter id="gain1">
+          <targetamplitude>97</targetamplitude>
+          <calibrationamplitude>97</calibrationamplitude>
+          <mute>-150.0</mute>
+          <max>50</max>
+        </parameter>
+      </parameters>
+    </calibration>
+    
+</apex:apex>
