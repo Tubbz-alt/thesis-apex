@@ -49,6 +49,16 @@
                     <stimulus id="stim7"/>
                     <standard id="stimref1"/>
                 </trial>
+                <trial id="trial18">
+                    <screen id="screen1"/>
+                    <stimulus id="stim8"/>
+                    <standard id="stimref1"/>
+                </trial>
+                <trial id="trial19">
+                    <screen id="screen1"/>
+                    <stimulus id="stim9"/>
+                    <standard id="stimref1"/>
+                </trial>
             </trials>
         </procedure>
         <procedure xsi:type="apex:constantProcedureType" id="procedure2">
@@ -92,6 +102,16 @@
                 <trial id="trial27">
                     <screen id="screen1"/>
                     <stimulus id="stim7"/>
+                    <standard id="stimref2"/>
+                </trial>
+                <trial id="trial28">
+                    <screen id="screen1"/>
+                    <stimulus id="stim8"/>
+                    <standard id="stimref2"/>
+                </trial>
+                <trial id="trial29">
+                    <screen id="screen1"/>
+                    <stimulus id="stim9"/>
                     <standard id="stimref2"/>
                 </trial>
             </trials>
@@ -184,33 +204,41 @@
         </datablock>
         <datablock id="datablockref2">
             <device>wavdevice</device>
-            <uri>AM_tone-fm_0.50-fc_1000-md_40-SPL_70-w_25-fs_44100-N_264600.wav</uri>
+            <uri>AM_tone-fm_0.50-fc_1000-md_40-SPL_70-w_25-fs_44100-N_176400.wav</uri>
         </datablock>
         <datablock id="datablock1">
             <device>wavdevice</device>
-            <uri>AM_tone-fm_0.50-fc_1000-md_40-SPL_70-w_25-fs_44100-N_264600.wav</uri>
+            <uri>AM_tone-fm_0.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
         </datablock>
         <datablock id="datablock2">
             <device>wavdevice</device>
-            <uri>AM_tone-fm_1.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_132300.wav</uri>
+            <uri>AM_tone-fm_0.25-fc_1000-md_40-SPL_70-w_25-fs_44100-N_176400.wav</uri>
         </datablock>
         <datablock id="datablock3">
             <device>wavdevice</device>
-            <uri>AM_tone-fm_2.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+            <uri>AM_tone-fm_0.50-fc_1000-md_40-SPL_70-w_25-fs_44100-N_176400.wav</uri>
         </datablock>
         <datablock id="datablock4">
             <device>wavdevice</device>
-            <uri>AM_tone-fm_4.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+            <uri>AM_tone-fm_1.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_132300.wav</uri>
         </datablock>
         <datablock id="datablock5">
             <device>wavdevice</device>
-            <uri>AM_tone-fm_8.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+            <uri>AM_tone-fm_2.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
         </datablock>
         <datablock id="datablock6">
             <device>wavdevice</device>
-            <uri>AM_tone-fm_16.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+            <uri>AM_tone-fm_4.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
         </datablock>
         <datablock id="datablock7">
+            <device>wavdevice</device>
+            <uri>AM_tone-fm_8.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+        </datablock>
+        <datablock id="datablock8">
+            <device>wavdevice</device>
+            <uri>AM_tone-fm_16.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+        </datablock>
+        <datablock id="datablock9">
             <device>wavdevice</device>
             <uri>AM_tone-fm_32.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
         </datablock>
@@ -300,6 +328,20 @@
             <datablocks>
                 <sequential>
                     <datablock id="datablock7"/>
+                </sequential>
+            </datablocks>
+        </stimulus>
+        <stimulus id="stim8">
+            <datablocks>
+                <sequential>
+                    <datablock id="datablock8"/>
+                </sequential>
+            </datablocks>
+        </stimulus>
+        <stimulus id="stim9">
+            <datablocks>
+                <sequential>
+                    <datablock id="datablock9"/>
                 </sequential>
             </datablocks>
         </stimulus>
