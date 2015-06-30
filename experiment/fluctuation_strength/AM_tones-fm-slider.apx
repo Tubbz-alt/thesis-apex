@@ -385,7 +385,7 @@
         </parameters>
     </calibration>
     <results>
-        <xsltscript>apexresult.xsl</xsltscript>
+        <xsltscript>slider.xsl</xsltscript>
         <saveprocessedresults>true</saveprocessedresults>
     </results>
     <general>
