@@ -128,28 +128,51 @@
             <progressbar>true</progressbar>
             <feedback>false</feedback>
         </reinforcement>
+        <style_apex>
+            QWidget#background {background-color: navy}
+            QLabel { font-family: "Segoe UI"; font-size: 18px}
+            QPushButton { font-family: "Segoe UI" }
+            #label_title { background-color: Navy; border: none; color: white; font-weight: bold; font-size: 24px }
+            #label_instructions { background-color: Navy; border: none; color: white }
+            #label_none { background-color: Navy; border: none; color: white; font-size: 14px }
+            #label_half { background-color: Navy; border: none; color: white; font-size: 14px }
+            #label_equal { background-color: Navy; border: none; color: white; font-size: 14px }
+            #label_double { background-color: Navy; border: none; color: white; font-size: 14px }
+        </style_apex>
         <screen id="screen1">
-            <gridLayout height="4" width="1" id="main_layout">
-                <gridLayout width="3" height="1" columnstretch="1,2,1" rowstretch="1" y="1">
-                    <label id="label_1" x="2" y="1">
-                        <text>How much does the second stimulus fluctuate with respect to the first one?</text>
+            <gridLayout height="5" width="1" rowstretch="2,8,1,8,2" id="main_layout">
+                <gridLayout width="3" height="2" columnstretch="1,8,1" rowstretch="1,2" y="1">
+                    <label id="label_title" x="2" y="2">
+                        <text>How much does the second sound fluctuate with respect to the first one?</text>
                     </label>
                 </gridLayout>
-                <gridLayout width="5" height="1" columnstretch="1,1,1,1,1" rowstretch="1" y="2">
-                    <label id="label_2" x="1">
-                        <text>None</text>
-                    </label>
-                    <label id="label_3" x="2">
-                        <text>Half</text>
-                    </label>
-                    <label id="label_4" x="3">
-                        <text>Equal</text>
-                    </label>
-                    <label id="label_5" x="5">
-                        <text>Double</text>
+                <gridLayout width="3" height="1" columnstretch="1,8,1" rowstretch="1" y="2">
+                    <label id="label_instructions" x="2">
+                        <text>Drag the slider below to indicate your answer. Above the slider some reference positions are indicated.
+To repeat the sounds you can click the "Repeat stimulus" button on the bottom right part of the screen.
+
+Once you're done, click the "Next" button below to continue.</text>
                     </label>
                 </gridLayout>
-                <gridLayout width="3" height="1" columnstretch="1,8,1" rowstretch="1" y="3">
+                <gridLayout id="hints" width="5" height="1" columnstretch="1,1,1,1,1" rowstretch="1" y="3">
+                    <label id="label_none" x="1">
+                        <text>None
+&#9660;</text>
+                    </label>
+                    <label id="label_half" x="2">
+                        <text>Half
+&#9660;</text>
+                    </label>
+                    <label id="label_equal" x="3">
+                        <text>Equal
+&#9660;</text>
+                    </label>
+                    <label id="label_double" x="5">
+                        <text>Double
+&#9660;</text>
+                    </label>
+                </gridLayout>
+                <gridLayout width="3" height="1" columnstretch="1,8,1" rowstretch="1" y="4">
                     <slider id="slider_1" x="2">
                         <orientation>horizontal</orientation>
                         <min>0</min>
@@ -160,13 +183,13 @@
                         <pagesize>5</pagesize>
                     </slider>    
                 </gridLayout>
-                <gridLayout width="3" height="1" columnstretch="1,2,1" rowstretch="1" y="4">
-                    <button id="button11" x="2">
+                <gridLayout width="3" height="2" columnstretch="2,1,2" rowstretch="2,1" y="5">
+                    <button id="button_next" x="2" y="1">
                         <text>Next</text>
                     </button>
                 </gridLayout>
             </gridLayout>
-            <default_answer_element>button11</default_answer_element>
+            <default_answer_element>button_next</default_answer_element>
         </screen>
     </screens>
     <datablocks>
