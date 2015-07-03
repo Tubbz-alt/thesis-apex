@@ -2,6 +2,7 @@
 <apex:apex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://med.kuleuven.be/exporl/apex/3.0.4/experiment https://gilbert.med.kuleuven.be/apex/schemas/3.0.4/experiment.xsd"
  xmlns:apex="http://med.kuleuven.be/exporl/apex/3.0.4/experiment" version="1">
+    <description>Magnitude estimation experiment to determine the dependence of modulation frequency on fluctuation strength for FM tones</description>
     <procedure xsi:type="apex:multiProcedureType">
         <parameters>
             <order>random</order>
@@ -49,6 +50,16 @@
                     <stimulus id="stim7"/>
                     <standard id="stimref1"/>
                 </trial>
+                <trial id="trial18">
+                    <screen id="screen1"/>
+                    <stimulus id="stim8"/>
+                    <standard id="stimref1"/>
+                </trial>
+                <trial id="trial19">
+                    <screen id="screen1"/>
+                    <stimulus id="stim9"/>
+                    <standard id="stimref1"/>
+                </trial>
             </trials>
         </procedure>
         <procedure xsi:type="apex:constantProcedureType" id="procedure2">
@@ -94,82 +105,93 @@
                     <stimulus id="stim7"/>
                     <standard id="stimref2"/>
                 </trial>
+                <trial id="trial28">
+                    <screen id="screen1"/>
+                    <stimulus id="stim8"/>
+                    <standard id="stimref2"/>
+                </trial>
+                <trial id="trial29">
+                    <screen id="screen1"/>
+                    <stimulus id="stim9"/>
+                    <standard id="stimref2"/>
+                </trial>
             </trials>
         </procedure>
     </procedure>
-    <corrector xsi:type="apex:alternatives">
-        <answers>
-            <answer number="1" value="button11"/>
-            <answer number="2" value="button12"/>
-            <answer number="3" value="button13"/>
-            <answer number="4" value="button14"/>
-            <answer number="5" value="button15"/>
-            <answer number="6" value="button16"/>
-            <answer number="7" value="button17"/>
-            <answer number="8" value="button18"/>
-            <answer number="9" value="button19"/>
-        </answers>
-    </corrector>
+    <corrector xsi:type="apex:isequal"/>
     <screens>
         <general>
             <repeatbutton>true</repeatbutton>
-            <showpanel>true</showpanel>
-            <showmenu>true</showmenu>
+            <showmenu>false</showmenu>
+            <fullscreen>true</fullscreen>
         </general>
         <reinforcement>
             <progressbar>true</progressbar>
             <feedback>false</feedback>
         </reinforcement>
+        <style_apex>
+            QWidget#background {background-color: navy}
+            QLabel { font-family: "Segoe UI"; font-size: 18px}
+            QPushButton { font-family: "Segoe UI" }
+            #label_title { background-color: Navy; border: none; color: white; font-weight: bold; font-size: 24px }
+            #label_instructions { background-color: Navy; border: none; color: white }
+            #label_none { background-color: Navy; border: none; color: white; font-size: 14px }
+            #label_half { background-color: Navy; border: none; color: white; font-size: 14px }
+            #label_equal { background-color: Navy; border: none; color: white; font-size: 14px }
+            #label_double { background-color: Navy; border: none; color: white; font-size: 14px }
+        </style_apex>
         <screen id="screen1">
-            <gridLayout height="3" width="1" id="main_layout">
-                <gridLayout width="3" height="1" columnstretch="1,2,1" rowstretch="1" y="1">
-                    <label id="label_1" x="2" y="1">
-                        <text>How much does the second stimulus fluctuate with respect to the first one?</text>
+            <gridLayout height="5" width="1" rowstretch="2,8,1,8,2" id="main_layout">
+                <gridLayout width="3" height="2" columnstretch="1,8,1" rowstretch="1,2" y="1">
+                    <label id="label_title" x="2" y="2">
+                        <text>How much does the second sound fluctuate with respect to the first one?</text>
                     </label>
                 </gridLayout>
-                <gridLayout width="9" height="1" columnstretch="1,1,1,1,1,1,1,1,1" rowstretch="1" y="2">
-                    <button id="button11" x="1" y="1">
-                        <text>0</text>
-                    </button>
-                    <button id="button12" x="2" y="1">
-                        <text>25</text>
-                    </button>
-                    <button id="button13" x="3" y="1">
-                        <text>50</text>
-                    </button>
-                    <button id="button14" x="4" y="1">
-                        <text>75</text>
-                    </button>
-                    <button id="button15" x="5" y="1">
-                        <text>100</text>
-                    </button>
-                    <button id="button16" x="6" y="1">
-                        <text>125</text>
-                    </button>
-                    <button id="button17" x="7" y="1">
-                        <text>150</text>
-                    </button>
-                    <button id="button18" x="8" y="1">
-                        <text>175</text>
-                    </button>
-                    <button id="button19" x="9" y="1">
-                        <text>200</text>
+                <gridLayout width="3" height="1" columnstretch="1,8,1" rowstretch="1" y="2">
+                    <label id="label_instructions" x="2">
+                        <text>Drag the slider below to indicate your answer. Above the slider some reference positions are indicated.
+To repeat the sounds you can click the "Repeat stimulus" button on the bottom right part of the screen.
+
+Once you're done, click the "Next" button below to continue.</text>
+                    </label>
+                </gridLayout>
+                <gridLayout id="hints" width="5" height="1" columnstretch="1,1,1,1,1" rowstretch="1" y="3">
+                    <label id="label_none" x="1">
+                        <text>None
+&#9660;</text>
+                    </label>
+                    <label id="label_half" x="2">
+                        <text>Half
+&#9660;</text>
+                    </label>
+                    <label id="label_equal" x="3">
+                        <text>Equal
+&#9660;</text>
+                    </label>
+                    <label id="label_double" x="5">
+                        <text>Double
+&#9660;</text>
+                    </label>
+                </gridLayout>
+                <gridLayout width="3" height="1" columnstretch="1,8,1" rowstretch="1" y="4">
+                    <slider id="slider_1" x="2">
+                        <orientation>horizontal</orientation>
+                        <min>0</min>
+                        <max>200</max>
+                        <value>100</value>
+                        <tickinterval>25</tickinterval>
+                        <stepsize>1</stepsize>
+                        <pagesize>5</pagesize>
+                    </slider>    
+                </gridLayout>
+                <gridLayout width="3" height="2" columnstretch="2,1,2" rowstretch="2,1" y="5">
+                    <button id="button_next" x="2" y="1">
+                        <fontsize>12</fontsize>
+                        <text>Next</text>
                     </button>
                 </gridLayout>
-                <gridLayout width="3" height="1" rowstretch="1" columnstretch="1,2,1" y="3"></gridLayout>
             </gridLayout>
-            <buttongroup id="btgrp1">
-                <button id="button11"/>
-                <button id="button12"/>
-                <button id="button13"/>
-                <button id="button14"/>
-                <button id="button15"/>
-                <button id="button16"/>
-                <button id="button17"/>
-                <button id="button18"/>
-                <button id="button19"/>
-            </buttongroup>
-            <default_answer_element>btgrp1</default_answer_element>
+            <default_answer_element>button_next</default_answer_element>
         </screen>
     </screens>
     <datablocks>
@@ -184,33 +206,41 @@
         </datablock>
         <datablock id="datablockref2">
             <device>wavdevice</device>
-            <uri>FM_tone-fm_0.50-fc_1500-df_700-SPL_70-w_25-fs_44100-N_264600.wav</uri>
+            <uri>FM_tone-fm_0.50-fc_1500-df_700-SPL_70-w_25-fs_44100-N_176400.wav</uri>
         </datablock>
         <datablock id="datablock1">
             <device>wavdevice</device>
-            <uri>FM_tone-fm_0.50-fc_1500-df_700-SPL_70-w_25-fs_44100-N_264600.wav</uri>
+            <uri>FM_tone-fm_0.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
         </datablock>
         <datablock id="datablock2">
             <device>wavdevice</device>
-            <uri>FM_tone-fm_1.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_132300.wav</uri>
+            <uri>FM_tone-fm_0.25-fc_1500-df_700-SPL_70-w_25-fs_44100-N_176400.wav</uri>
         </datablock>
         <datablock id="datablock3">
             <device>wavdevice</device>
-            <uri>FM_tone-fm_2.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+            <uri>FM_tone-fm_0.50-fc_1500-df_700-SPL_70-w_25-fs_44100-N_176400.wav</uri>
         </datablock>
         <datablock id="datablock4">
             <device>wavdevice</device>
-            <uri>FM_tone-fm_4.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+            <uri>FM_tone-fm_1.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_132300.wav</uri>
         </datablock>
         <datablock id="datablock5">
             <device>wavdevice</device>
-            <uri>FM_tone-fm_8.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+            <uri>FM_tone-fm_2.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
         </datablock>
         <datablock id="datablock6">
             <device>wavdevice</device>
-            <uri>FM_tone-fm_16.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+            <uri>FM_tone-fm_4.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
         </datablock>
         <datablock id="datablock7">
+            <device>wavdevice</device>
+            <uri>FM_tone-fm_8.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+        </datablock>
+        <datablock id="datablock8">
+            <device>wavdevice</device>
+            <uri>FM_tone-fm_16.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+        </datablock>
+        <datablock id="datablock9">
             <device>wavdevice</device>
             <uri>FM_tone-fm_32.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
         </datablock>
@@ -303,6 +333,20 @@
                 </sequential>
             </datablocks>
         </stimulus>
+        <stimulus id="stim8">
+            <datablocks>
+                <sequential>
+                    <datablock id="datablock8"/>
+                </sequential>
+            </datablocks>
+        </stimulus>
+        <stimulus id="stim9">
+            <datablocks>
+                <sequential>
+                    <datablock id="datablock9"/>
+                </sequential>
+            </datablocks>
+        </stimulus>
     </stimuli>
     <connections>
         <connection>
@@ -366,10 +410,15 @@
         </parameters>
     </calibration>
     <results>
-        <xsltscript>apexresult.xsl</xsltscript>
+        <xsltscript>slider.xsl</xsltscript>
         <saveprocessedresults>true</saveprocessedresults>
+        <subject></subject>
     </results>
+    <interactive>
+        <entry type="string" description="Subject's name" expression="/apex:apex/results[1]/subject[1]" default=""/>
+    </interactive>
     <general>
+        <exitafter>true</exitafter>
         <autosave>true</autosave>
     </general>
 </apex:apex>
