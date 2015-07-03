@@ -9,7 +9,9 @@ ECHO "Running AM-fm experiment..."
 START /W "" %APEX_BIN% "..\experiment\AM-fm.apx"
 
 ECHO "Running FM-fm experiment..."
-START /W "" %APEX_BIN% "..\experiment\AM-fm.apx"
+START /W "" %APEX_BIN% "..\experiment\FM-fm.apx"
 
-START /W clean_experiment_dir.bat
+START /W move_results_files.bat
+
+EXIT
 
