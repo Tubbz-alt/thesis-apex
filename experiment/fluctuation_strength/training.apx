@@ -2,77 +2,85 @@
 <apex:apex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://med.kuleuven.be/exporl/apex/3.0.4/experiment https://gilbert.med.kuleuven.be/apex/schemas/3.0.4/experiment.xsd"
  xmlns:apex="http://med.kuleuven.be/exporl/apex/3.0.4/experiment" version="1">
-        <procedure xsi:type="apex:trainingProcedureType" id="procedure1">
-            <parameters>
-                <presentations>100</presentations>
-                <order>sequential</order>
-            </parameters>
-            <trials>
-                <trial id="trial11">
-                    <answer>button11</answer>
-                    <screen id="screen1"/>
-                    <stimulus id="stim1"/>
-                </trial>
-                <trial id="trial12">
-                    <answer>button12</answer>
-                    <screen id="screen1"/>
-                    <stimulus id="stim2"/>
-                </trial>
-                <trial id="trial13">
-                  <answer>button13</answer>
-                    <screen id="screen1"/>
-                    <stimulus id="stim3"/>
-                </trial>
-                <trial id="trial14">
-                  <answer>button14</answer>
-                    <screen id="screen1"/>
-                    <stimulus id="stim4"/>
-                </trial>
-              <trial id="trial15">
-                <answer>button15</answer>
+    <description>Training phase for fluctuation strength related experiments</description>
+    <procedure xsi:type="apex:trainingProcedureType" id="procedure1">
+        <parameters>
+            <presentations>100</presentations>
+            <order>sequential</order>
+        </parameters>
+        <trials>
+            <trial id="trial11">
+                <answer>button11</answer>
                 <screen id="screen1"/>
-                <stimulus id="stim5"/>
-              </trial>
-            </trials>
-        </procedure>
+                <stimulus id="stim1"/>
+            </trial>
+            <trial id="trial12">
+                <answer>button12</answer>
+                <screen id="screen1"/>
+                <stimulus id="stim2"/>
+            </trial>
+            <trial id="trial13">
+              <answer>button13</answer>
+                <screen id="screen1"/>
+                <stimulus id="stim3"/>
+            </trial>
+            <trial id="trial14">
+              <answer>button14</answer>
+                <screen id="screen1"/>
+                <stimulus id="stim4"/>
+            </trial>
+          <trial id="trial15">
+            <answer>button15</answer>
+            <screen id="screen1"/>
+            <stimulus id="stim5"/>
+          </trial>
+        </trials>
+    </procedure>
     <corrector xsi:type="apex:isequal"/>
     <screens>
         <general>
-            <repeatbutton>true</repeatbutton>
-            <showpanel>true</showpanel>
-            <showmenu>true</showmenu>
+            <showpanel>false</showpanel>
+            <showmenu>false</showmenu>
+            <fullscreen>true</fullscreen>
         </general>
-        <reinforcement>
-            <progressbar>true</progressbar>
-            <feedback>false</feedback>
-        </reinforcement>
+        <style_apex>
+            QWidget#background {background-color: navy}
+            QLabel { font-family: "Segoe UI"; background-color: Navy; border: none; color: white; font-size: 18px }
+            QPushButton { font-family: "Segoe UI"; font-size: 18px; font-weight: bold }
+            #label_title { background-color: Navy; border: none; color: white; font-weight: bold; font-size: 24px }
+        </style_apex>
         <screen id="screen1">
-            <gridLayout height="4" width="1" id="main_layout">
+            <gridLayout height="6" width="1" rowstretch="1,1,8,1,8,1" id="main_layout">
                 <gridLayout width="3" height="1" columnstretch="1,2,1" rowstretch="1" y="1">
-                    <label id="label_1" x="2" y="1">
+                    <label id="label_title" x="2" y="1">
+                        <text>Training Phase</text>
+                    </label>
+                </gridLayout>
+                <gridLayout width="3" height="1" columnstretch="1,2,1" rowstretch="1" y="2">
+                    <label id="label_reference" x="2" y="1">
                         <text>Reference Stimuli</text>
                     </label>
                 </gridLayout>
-                <gridLayout width="4" height="1" columnstretch="1,1,1,1" rowstretch="1" y="2">
-                    <button id="button11" x="1" y="1">
+                <gridLayout width="6" height="1" columnstretch="1,1,1,1,1,1" rowstretch="1" y="3">
+                    <button id="button11" x="2" y="1">
                         <text>1</text>
                     </button>
-                    <button id="button12" x="2" y="1">
+                    <button id="button12" x="3" y="1">
                         <text>2</text>
                     </button>
-                    <button id="button13" x="3" y="1">
+                    <button id="button13" x="4" y="1">
                         <text>3</text>
                     </button>
-                    <button id="button14" x="4" y="1">
+                    <button id="button14" x="5" y="1">
                         <text>4</text>
                     </button>
                 </gridLayout>
-                <gridLayout width="3" height="1" columnstretch="1,2,1" rowstretch="1" y="3">
-                    <label id="label_2" x="2" y="1">
+                <gridLayout width="3" height="1" columnstretch="1,2,1" rowstretch="1" y="4">
+                    <label id="label_all" x="2" y="1">
                         <text>All Stimuli</text>
                     </label>
                 </gridLayout>
-                <gridLayout width="3" height="1" columnstretch="1,1,1" rowstretch="1" y="4">
+                <gridLayout width="3" height="1" columnstretch="2,1,2" rowstretch="1" y="5">
                     <button id="button15" x="2" y="1">
                         <text>5</text>
                     </button>
@@ -257,4 +265,7 @@
             </parameter>
         </parameters>
     </calibration>
+    <general>
+        <autosave>true</autosave>
+    </general>
 </apex:apex>
