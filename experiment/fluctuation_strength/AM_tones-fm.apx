@@ -2,6 +2,7 @@
 <apex:apex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://med.kuleuven.be/exporl/apex/3.0.4/experiment https://gilbert.med.kuleuven.be/apex/schemas/3.0.4/experiment.xsd"
  xmlns:apex="http://med.kuleuven.be/exporl/apex/3.0.4/experiment" version="1">
+    <description>Magnitude estimation experiment to determine the dependence of modulation frequency on fluctuation strength for AM tones</description>
     <procedure xsi:type="apex:multiProcedureType">
         <parameters>
             <order>random</order>
@@ -121,8 +122,8 @@
     <screens>
         <general>
             <repeatbutton>true</repeatbutton>
-            <showpanel>true</showpanel>
-            <showmenu>true</showmenu>
+            <showmenu>false</showmenu>
+            <fullscreen>true</fullscreen>
         </general>
         <reinforcement>
             <progressbar>true</progressbar>
@@ -185,6 +186,7 @@ Once you're done, click the "Next" button below to continue.</text>
                 </gridLayout>
                 <gridLayout width="3" height="2" columnstretch="2,1,2" rowstretch="2,1" y="5">
                     <button id="button_next" x="2" y="1">
+                        <fontsize>12</fontsize>
                         <text>Next</text>
                     </button>
                 </gridLayout>
@@ -410,8 +412,13 @@ Once you're done, click the "Next" button below to continue.</text>
     <results>
         <xsltscript>slider.xsl</xsltscript>
         <saveprocessedresults>true</saveprocessedresults>
+        <subject></subject>
     </results>
+    <interactive>
+        <entry type="string" description="Subject's name" expression="/apex:apex/results[1]/subject[1]" default=""/>
+    </interactive>
     <general>
+        <exitafter>true</exitafter>
         <autosave>true</autosave>
     </general>
 </apex:apex>
