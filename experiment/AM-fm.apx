@@ -182,7 +182,7 @@ Once you're done, click the "Next" button below to continue.</text>
                         <tickinterval>25</tickinterval>
                         <stepsize>1</stepsize>
                         <pagesize>5</pagesize>
-                    </slider>    
+                    </slider>
                 </gridLayout>
                 <gridLayout width="3" height="2" columnstretch="2,1,2" rowstretch="2,1" y="5">
                     <button id="button_next" x="2" y="1">
@@ -412,11 +412,7 @@ Once you're done, click the "Next" button below to continue.</text>
     <results>
         <xsltscript>slider.xsl</xsltscript>
         <saveprocessedresults>true</saveprocessedresults>
-        <subject></subject>
     </results>
-    <interactive>
-        <entry type="string" description="Subject's name" expression="/apex:apex/results[1]/subject[1]" default=""/>
-    </interactive>
     <general>
         <exitafter>true</exitafter>
         <autosave>true</autosave>
