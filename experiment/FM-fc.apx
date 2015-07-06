@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <apex:apex xmlns:apex="http://med.kuleuven.be/exporl/apex/3.0.4/experiment" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1" xsi:schemaLocation="http://med.kuleuven.be/exporl/apex/3.0.4/experiment https://gilbert.med.kuleuven.be/apex/schemas/3.0.4/experiment.xsd">
     
-   <description>Magnitude estimation experiment to determine the dependence of modulation frequency on fluctuation strength for FM tones</description>
+   <description>Magnitude estimation experiment to determine the dependence of center frequency on fluctuation strength for FM tones</description>
     
    <procedure xsi:type="apex:multiProcedureType">
         
@@ -59,11 +59,6 @@
                <stimulus id="stim8"/>
                <standard id="stimref1"/>
             </trial>
-            <trial id="trial19">
-               <screen id="screen1"/>
-               <stimulus id="stim9"/>
-               <standard id="stimref1"/>
-            </trial>
          </trials>
       </procedure>
       <procedure id="procedure2" xsi:type="apex:constantProcedureType">
@@ -112,11 +107,6 @@
             <trial id="trial28">
                <screen id="screen1"/>
                <stimulus id="stim8"/>
-               <standard id="stimref2"/>
-            </trial>
-            <trial id="trial29">
-               <screen id="screen1"/>
-               <stimulus id="stim9"/>
                <standard id="stimref2"/>
             </trial>
          </trials>
@@ -272,47 +262,43 @@ Once you're done, click the "Next" button below to continue.</text>
     
       <datablock id="datablockref1">
          <device>wavdevice</device>
-         <uri>FM_tone-fm_4.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+         <uri>FM_tone-fm_4.00-fc_1500-df_200-SPL_70-w_25-fs_44100-N_88200.wav</uri>
       </datablock>
       <datablock id="datablockref2">
          <device>wavdevice</device>
-         <uri>FM_tone-fm_0.50-fc_1500-df_700-SPL_70-w_25-fs_44100-N_176400.wav</uri>
+         <uri>FM_tone-fm_4.00-fc_500-df_200-SPL_70-w_25-fs_44100-N_88200.wav</uri>
       </datablock>
       <datablock id="datablock1">
          <device>wavdevice</device>
-         <uri>FM_tone-fm_0.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+         <uri>FM_tone-fm_4.00-fc_500-df_200-SPL_70-w_25-fs_44100-N_88200.wav</uri>
       </datablock>
       <datablock id="datablock2">
          <device>wavdevice</device>
-         <uri>FM_tone-fm_0.25-fc_1500-df_700-SPL_70-w_25-fs_44100-N_176400.wav</uri>
+         <uri>FM_tone-fm_4.00-fc_1000-df_200-SPL_70-w_25-fs_44100-N_88200.wav</uri>
       </datablock>
       <datablock id="datablock3">
          <device>wavdevice</device>
-         <uri>FM_tone-fm_0.50-fc_1500-df_700-SPL_70-w_25-fs_44100-N_176400.wav</uri>
+         <uri>FM_tone-fm_4.00-fc_1500-df_200-SPL_70-w_25-fs_44100-N_88200.wav</uri>
       </datablock>
       <datablock id="datablock4">
          <device>wavdevice</device>
-         <uri>FM_tone-fm_1.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_132300.wav</uri>
+         <uri>FM_tone-fm_4.00-fc_2000-df_200-SPL_70-w_25-fs_44100-N_88200.wav</uri>
       </datablock>
       <datablock id="datablock5">
          <device>wavdevice</device>
-         <uri>FM_tone-fm_2.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+         <uri>FM_tone-fm_4.00-fc_3000-df_200-SPL_70-w_25-fs_44100-N_88200.wav</uri>
       </datablock>
       <datablock id="datablock6">
          <device>wavdevice</device>
-         <uri>FM_tone-fm_4.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+         <uri>FM_tone-fm_4.00-fc_4000-df_200-SPL_70-w_25-fs_44100-N_88200.wav</uri>
       </datablock>
       <datablock id="datablock7">
          <device>wavdevice</device>
-         <uri>FM_tone-fm_8.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+         <uri>FM_tone-fm_4.00-fc_6000-df_200-SPL_70-w_25-fs_44100-N_88200.wav</uri>
       </datablock>
       <datablock id="datablock8">
          <device>wavdevice</device>
-         <uri>FM_tone-fm_16.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
-      </datablock>
-      <datablock id="datablock9">
-         <device>wavdevice</device>
-         <uri>FM_tone-fm_32.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+         <uri>FM_tone-fm_4.00-fc_8000-df_200-SPL_70-w_25-fs_44100-N_88200.wav</uri>
       </datablock>
    </datablocks>
     
@@ -433,13 +419,6 @@ Once you're done, click the "Next" button below to continue.</text>
          <datablocks>
             <sequential>
                <datablock id="datablock8"/>
-            </sequential>
-         </datablocks>
-      </stimulus>
-      <stimulus id="stim9">
-         <datablocks>
-            <sequential>
-               <datablock id="datablock9"/>
             </sequential>
          </datablocks>
       </stimulus>
