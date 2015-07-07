@@ -1,7 +1,14 @@
 @ECHO OFF
 
 ECHO "Moving experiment results files..."
-MOVE "..\experiment\*.apr" "..\result"
+
+SETLOCAL ENABLEDELAYEDEXPANSION
+
+FOR %%G IN (..\experiment\*.apr) DO (
+    SET EXPERIMENT_FILE=%%G
+    SET EXPERIMENT_FILENAME=!EXPERIMENT_FILE:~14,-4!
+    MOVE %%G ..\result\!EXPERIMENT_FILENAME!-%1.apr
+)
 
 EXIT
 
