@@ -8,12 +8,10 @@ SET /P SUBJECT="Please enter your name: "
 
 ECHO Running training phase...
 START /W "" %APEX_BIN% -an "..\experiment\FM-training.apx"
-PAUSE
 
 FOR %%G IN (%EXPERIMENTS_FILES%) DO (
     ECHO Running experiment %%G...
     START /W "" %APEX_BIN% "%EXPERIMENTS_ROOT%%%G"
-    PAUSE
 )
 
 START /W "" move_results_files.bat %SUBJECT%
