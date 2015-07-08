@@ -236,7 +236,7 @@ Once you're done, click the "Next" button below to continue.</text>
       </datablock>
       <datablock id="datablockref2">
          <device>wavdevice</device>
-         <uri>FM_tone-fm_4.00-fc_1500-df_100-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+         <uri>FM_tone-fm_4.00-fc_1500-df_32-SPL_70-w_25-fs_44100-N_88200.wav</uri>
       </datablock>
       <datablock id="datablock1">
          <device>wavdevice</device>
