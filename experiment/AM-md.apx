@@ -49,21 +49,6 @@
                <stimulus id="stim6"/>
                <standard id="stimref1"/>
             </trial>
-            <trial id="trial17">
-               <screen id="screen1"/>
-               <stimulus id="stim7"/>
-               <standard id="stimref1"/>
-            </trial>
-            <trial id="trial18">
-               <screen id="screen1"/>
-               <stimulus id="stim8"/>
-               <standard id="stimref1"/>
-            </trial>
-            <trial id="trial19">
-               <screen id="screen1"/>
-               <stimulus id="stim9"/>
-               <standard id="stimref1"/>
-            </trial>
          </trials>
       </procedure>
       <procedure id="procedure2" xsi:type="apex:constantProcedureType">
@@ -102,21 +87,6 @@
             <trial id="trial26">
                <screen id="screen1"/>
                <stimulus id="stim6"/>
-               <standard id="stimref2"/>
-            </trial>
-            <trial id="trial27">
-               <screen id="screen1"/>
-               <stimulus id="stim7"/>
-               <standard id="stimref2"/>
-            </trial>
-            <trial id="trial28">
-               <screen id="screen1"/>
-               <stimulus id="stim8"/>
-               <standard id="stimref2"/>
-            </trial>
-            <trial id="trial29">
-               <screen id="screen1"/>
-               <stimulus id="stim9"/>
                <standard id="stimref2"/>
             </trial>
          </trials>
@@ -292,25 +262,13 @@ Once you're done, click the "Next" button below to continue.</text>
       </datablock>
       <datablock id="datablock4">
          <device>wavdevice</device>
-         <uri>AM_tone-fm_4.00-fc_1000-md_6-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+         <uri>AM_tone-fm_4.00-fc_1000-md_10-SPL_70-w_25-fs_44100-N_88200.wav</uri>
       </datablock>
       <datablock id="datablock5">
          <device>wavdevice</device>
-         <uri>AM_tone-fm_4.00-fc_1000-md_8-SPL_70-w_25-fs_44100-N_88200.wav</uri>
-      </datablock>
-      <datablock id="datablock6">
-         <device>wavdevice</device>
-         <uri>AM_tone-fm_4.00-fc_1000-md_12-SPL_70-w_25-fs_44100-N_88200.wav</uri>
-      </datablock>
-      <datablock id="datablock7">
-         <device>wavdevice</device>
-         <uri>AM_tone-fm_4.00-fc_1000-md_16-SPL_70-w_25-fs_44100-N_88200.wav</uri>
-      </datablock>
-      <datablock id="datablock8">
-         <device>wavdevice</device>
          <uri>AM_tone-fm_4.00-fc_1000-md_20-SPL_70-w_25-fs_44100-N_88200.wav</uri>
       </datablock>
-      <datablock id="datablock9">
+      <datablock id="datablock6">
          <device>wavdevice</device>
          <uri>AM_tone-fm_4.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
       </datablock>
@@ -419,27 +377,6 @@ Once you're done, click the "Next" button below to continue.</text>
          <datablocks>
             <sequential>
                <datablock id="datablock6"/>
-            </sequential>
-         </datablocks>
-      </stimulus>
-      <stimulus id="stim7">
-         <datablocks>
-            <sequential>
-               <datablock id="datablock7"/>
-            </sequential>
-         </datablocks>
-      </stimulus>
-      <stimulus id="stim8">
-         <datablocks>
-            <sequential>
-               <datablock id="datablock8"/>
-            </sequential>
-         </datablocks>
-      </stimulus>
-      <stimulus id="stim9">
-         <datablocks>
-            <sequential>
-               <datablock id="datablock9"/>
             </sequential>
          </datablocks>
       </stimulus>
