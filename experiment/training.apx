@@ -34,6 +34,41 @@
             <screen id="screen1"/>
             <stimulus id="stim5"/>
           </trial>
+            <trial id="trial21">
+                <answer>button21</answer>
+                <screen id="screen1"/>
+                <stimulus id="stim6"/>
+            </trial>
+            <trial id="trial22">
+                <answer>button22</answer>
+                <screen id="screen1"/>
+                <stimulus id="stim7"/>
+            </trial>
+            <trial id="trial23">
+                <answer>button23</answer>
+                <screen id="screen1"/>
+                <stimulus id="stim8"/>
+            </trial>
+            <trial id="trial24">
+                <answer>button24</answer>
+                <screen id="screen1"/>
+                <stimulus id="stim9"/>
+            </trial>
+            <trial id="trial25">
+                <answer>button25</answer>
+                <screen id="screen1"/>
+                <stimulus id="stim10"/>
+            </trial>
+          <trial id="trial31">
+              <answer>button31</answer>
+              <screen id="screen1"/>
+              <stimulus id="stim11"/>
+          </trial>
+            <trial id="trial32">
+                <answer>button32</answer>
+                <screen id="screen1"/>
+                <stimulus id="stim12"/>
+            </trial>
         </trials>
     </procedure>
     <corrector xsi:type="apex:isequal"/>
@@ -50,7 +85,7 @@
             #label_title { background-color: Navy; border: none; color: white; font-weight: bold; font-size: 24px }
         </style_apex>
         <screen id="screen1">
-            <gridLayout height="6" width="1" rowstretch="1,1,8,1,8,1" id="main_layout">
+            <gridLayout height="7" width="1" rowstretch="1,1,8,8,1,8,1" id="main_layout">
                 <gridLayout width="3" height="1" columnstretch="1,2,1" rowstretch="1" y="1">
                     <label id="label_title" x="2" y="1">
                         <text>Training Phase</text>
@@ -61,7 +96,7 @@
                         <text>Reference Stimuli</text>
                     </label>
                 </gridLayout>
-                <gridLayout width="6" height="1" columnstretch="1,1,1,1,1,1" rowstretch="1" y="3">
+                <gridLayout width="7" height="1" columnstretch="1,1,1,1,1,1,1" rowstretch="1" y="3">
                     <button id="button11" x="2" y="1">
                         <text>1</text>
                     </button>
@@ -74,15 +109,38 @@
                     <button id="button14" x="5" y="1">
                         <text>4</text>
                     </button>
+                    <button id="button15" x="6" y="1">
+                        <text>5</text>
+                    </button>
                 </gridLayout>
-                <gridLayout width="3" height="1" columnstretch="1,2,1" rowstretch="1" y="4">
+                <gridLayout width="7" height="1" columnstretch="1,1,1,1,1,1,1" rowstretch="1" y="4">
+                    <button id="button21" x="2" y="1">
+                        <text>5</text>
+                    </button>
+                    <button id="button22" x="3" y="1">
+                        <text>6</text>
+                    </button>
+                    <button id="button23" x="4" y="1">
+                        <text>7</text>
+                    </button>
+                    <button id="button24" x="5" y="1">
+                        <text>9</text>
+                    </button>
+                    <button id="button25" x="6" y="1">
+                        <text>10</text>
+                    </button>
+                </gridLayout>
+                <gridLayout width="3" height="1" columnstretch="1,2,1" rowstretch="1" y="5">
                     <label id="label_all" x="2" y="1">
                         <text>All Stimuli</text>
                     </label>
                 </gridLayout>
-                <gridLayout width="3" height="1" columnstretch="2,1,2" rowstretch="1" y="5">
-                    <button id="button15" x="2" y="1">
-                        <text>5</text>
+                <gridLayout width="4" height="1" columnstretch="2,1,1,2" rowstretch="1" y="6">
+                    <button id="button31" x="2" y="1">
+                        <text>11</text>
+                    </button>
+                    <button id="button32" x="3" y="1">
+                        <text>12</text>
                     </button>
                 </gridLayout>
             </gridLayout>
@@ -92,6 +150,13 @@
                 <button id="button13"/>
                 <button id="button14"/>
                 <button id="button15"/>
+                <button id="button21"/>
+                <button id="button22"/>
+                <button id="button23"/>
+                <button id="button24"/>
+                <button id="button25"/>
+                <button id="button31"/>
+                <button id="button32"/>
             </buttongroup>
             <default_answer_element>btgrp1</default_answer_element>
         </screen>
@@ -108,39 +173,47 @@
         </datablock>
         <datablock id="datablock2">
             <device>wavdevice</device>
-            <uri>AM_tone-fm_0.25-fc_1000-md_40-SPL_70-w_25-fs_44100-N_176400.wav</uri>
+            <uri>AM_tone-fm_0.50-fc_1000-md_40-SPL_70-w_25-fs_44100-N_176400.wav</uri>
         </datablock>
         <datablock id="datablock3">
             <device>wavdevice</device>
-            <uri>AM_tone-fm_0.50-fc_1000-md_40-SPL_70-w_25-fs_44100-N_176400.wav</uri>
+            <uri>AM_tone-fm_4.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
         </datablock>
         <datablock id="datablock4">
             <device>wavdevice</device>
-            <uri>AM_tone-fm_1.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_132300.wav</uri>
+            <uri>AM_tone-fm_32.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
         </datablock>
         <datablock id="datablock5">
             <device>wavdevice</device>
-            <uri>AM_tone-fm_2.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+            <uri>AM_tone-fm_128.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
         </datablock>
         <datablock id="datablock6">
             <device>wavdevice</device>
-            <uri>AM_tone-fm_4.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+            <uri>FM_tone-fm_0.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
         </datablock>
         <datablock id="datablock7">
             <device>wavdevice</device>
-            <uri>AM_tone-fm_8.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+            <uri>FM_tone-fm_0.50-fc_1500-df_700-SPL_70-w_25-fs_44100-N_176400.wav</uri>
         </datablock>
         <datablock id="datablock8">
             <device>wavdevice</device>
-            <uri>AM_tone-fm_16.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+            <uri>FM_tone-fm_4.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
         </datablock>
         <datablock id="datablock9">
             <device>wavdevice</device>
-            <uri>AM_tone-fm_32.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+            <uri>FM_tone-fm_32.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
         </datablock>
         <datablock id="datablock10">
             <device>wavdevice</device>
+            <uri>FM_tone-fm_128.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+        </datablock>
+        <datablock id="datablock11">
+            <device>wavdevice</device>
             <uri>AM_tone-all_stimuli.wav</uri>
+        </datablock>
+        <datablock id="datablock12">
+            <device>wavdevice</device>
+            <uri>FM_tone-all_stimuli.wav</uri>
         </datablock>
     </datablocks>
     <devices>
@@ -178,28 +251,77 @@
         <stimulus id="stim2">
             <datablocks>
                 <sequential>
-                    <datablock id="datablock3"/>
+                    <datablock id="datablock2"/>
                 </sequential>
             </datablocks>
         </stimulus>
         <stimulus id="stim3">
             <datablocks>
                 <sequential>
-                    <datablock id="datablock6"/>
+                    <datablock id="datablock3"/>
                 </sequential>
             </datablocks>
         </stimulus>
         <stimulus id="stim4">
             <datablocks>
                 <sequential>
-                    <datablock id="datablock9"/>
+                    <datablock id="datablock4"/>
                 </sequential>
             </datablocks>
         </stimulus>
         <stimulus id="stim5">
             <datablocks>
                 <sequential>
+                    <datablock id="datablock5"/>
+                </sequential>
+            </datablocks>
+        </stimulus>
+        <stimulus id="stim6">
+            <datablocks>
+                <sequential>
+                    <datablock id="datablock6"/>
+                </sequential>
+            </datablocks>
+        </stimulus>
+        <stimulus id="stim7">
+            <datablocks>
+                <sequential>
+                    <datablock id="datablock7"/>
+                </sequential>
+            </datablocks>
+        </stimulus>
+        <stimulus id="stim8">
+            <datablocks>
+                <sequential>
+                    <datablock id="datablock8"/>
+                </sequential>
+            </datablocks>
+        </stimulus>
+        <stimulus id="stim9">
+            <datablocks>
+                <sequential>
+                    <datablock id="datablock9"/>
+                </sequential>
+            </datablocks>
+        </stimulus>
+        <stimulus id="stim10">
+            <datablocks>
+                <sequential>
                     <datablock id="datablock10"/>
+                </sequential>
+            </datablocks>
+        </stimulus>
+        <stimulus id="stim11">
+            <datablocks>
+                <sequential>
+                    <datablock id="datablock11"/>
+                </sequential>
+            </datablocks>
+        </stimulus>
+        <stimulus id="stim12">
+            <datablocks>
+                <sequential>
+                    <datablock id="datablock12"/>
                 </sequential>
             </datablocks>
         </stimulus>
