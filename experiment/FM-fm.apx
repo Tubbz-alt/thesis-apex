@@ -64,6 +64,16 @@
                <stimulus id="stim9"/>
                <standard id="stimref1"/>
             </trial>
+            <trial id="trial110">
+               <screen id="screen1"/>
+               <stimulus id="stim10"/>
+               <standard id="stimref1"/>
+            </trial>
+            <trial id="trial111">
+               <screen id="screen1"/>
+               <stimulus id="stim11"/>
+               <standard id="stimref1"/>
+            </trial>
          </trials>
       </procedure>
       <procedure id="procedure2" xsi:type="apex:constantProcedureType">
@@ -117,6 +127,16 @@
             <trial id="trial29">
                <screen id="screen1"/>
                <stimulus id="stim9"/>
+               <standard id="stimref2"/>
+            </trial>
+            <trial id="trial210">
+               <screen id="screen1"/>
+               <stimulus id="stim10"/>
+               <standard id="stimref2"/>
+            </trial>
+            <trial id="trial211">
+               <screen id="screen1"/>
+               <stimulus id="stim11"/>
                <standard id="stimref2"/>
             </trial>
          </trials>
@@ -314,6 +334,14 @@ Once you're done, click the "Next" button below to continue.</text>
          <device>wavdevice</device>
          <uri>FM_tone-fm_32.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
       </datablock>
+      <datablock id="datablock10">
+         <device>wavdevice</device>
+         <uri>FM_tone-fm_64.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+      </datablock>
+      <datablock id="datablock11">
+         <device>wavdevice</device>
+         <uri>FM_tone-fm_128.00-fc_1500-df_700-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+      </datablock>
    </datablocks>
     
    <devices>
@@ -440,6 +468,20 @@ Once you're done, click the "Next" button below to continue.</text>
          <datablocks>
             <sequential>
                <datablock id="datablock9"/>
+            </sequential>
+         </datablocks>
+      </stimulus>
+      <stimulus id="stim10">
+         <datablocks>
+            <sequential>
+               <datablock id="datablock10"/>
+            </sequential>
+         </datablocks>
+      </stimulus>
+      <stimulus id="stim11">
+         <datablocks>
+            <sequential>
+               <datablock id="datablock11"/>
             </sequential>
          </datablocks>
       </stimulus>
