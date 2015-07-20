@@ -7,7 +7,7 @@ SET EXPERIMENTS_FILES=FM-fm.apx FM-fc.apx FM-df.apx FM-SPL.apx
 SET /P SUBJECT="Please enter your name: "
 
 ECHO Running training phase...
-START /W "" %APEX_BIN% -an "..\experiment\FM-training.apx"
+START /W "" %APEX_BIN% -an "..\experiment\training.apx"
 
 FOR %%G IN (%EXPERIMENTS_FILES%) DO (
     ECHO Running experiment %%G...
