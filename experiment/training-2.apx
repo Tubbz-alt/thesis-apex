@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<apex:apex xmlns:apex="http://med.kuleuven.be/exporl/apex/3.0.4/experiment" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1" xsi:schemaLocation="http://med.kuleuven.be/exporl/apex/3.0.4/experiment https://gilbert.med.kuleuven.be/apex/schemas/3.0.4/experiment.xsd">
+    
+   <description>Training phase for fluctuation strength experiments</description>
+
+   <procedure id="procedure1" xsi:type="apex:constantProcedureType">
+      <parameters>
+         <presentations>1</presentations>
+         <order>random</order>
+         <choices select="2">2</choices>
+         <pause_between_stimuli>800</pause_between_stimuli>
+      </parameters>
+      <trials>
+         <trial id="trial1">
+            <screen id="screen1"/>
+            <stimulus id="stim1"/>
+            <standard id="stimref1"/>
+         </trial>
+         <trial id="trial2">
+            <screen id="screen1"/>
+            <stimulus id="stim2"/>
+            <standard id="stimref2"/>
+         </trial>
+         <trial id="trial3">
+            <screen id="screen1"/>
+            <stimulus id="stim3"/>
+            <standard id="stimref3"/>
+         </trial>
+         <trial id="trial4">
+            <screen id="screen1"/>
+            <stimulus id="stim4"/>
+            <standard id="stimref4"/>
+         </trial>
+      </trials>
+   </procedure>
+ 
+   <corrector xsi:type="apex:isequal"/>
+    
+   <screens>
+        
+      <general>
+            
+         <repeatbutton>true</repeatbutton>
+            
+         <showmenu>false</showmenu>
+            
+         <fullscreen>true</fullscreen>
+        
+      </general>
+        
+      <reinforcement>
+            
+         <progressbar>true</progressbar>
+            
+         <feedback>false</feedback>
+        
+      </reinforcement>
+        
+      <style_apex>
+            QWidget#background {background-color: navy}
+            QLabel { font-family: "Segoe UI"; font-size: 18px}
+            QPushButton { font-family: "Segoe UI" }
+            #label_title { background-color: Navy; border: none; color: white; font-weight: bold; font-size: 24px }
+            #label_instructions { background-color: Navy; border: none; color: white }
+            #label_none { background-color: Navy; border: none; color: white; font-size: 14px }
+            #label_half { background-color: Navy; border: none; color: white; font-size: 14px }
+            #label_equal { background-color: Navy; border: none; color: white; font-size: 14px }
+            #label_double { background-color: Navy; border: none; color: white; font-size: 14px }
+        </style_apex>
+        
+      <screen id="screen1">
+            
+         <gridLayout height="5" id="main_layout" rowstretch="2,8,1,8,2" width="1">
+                
+            <gridLayout columnstretch="1,8,1" height="2" rowstretch="1,2" width="3" y="1">
+                    
+               <label id="label_title" x="2" y="2">
+                        
+                  <text>How much does the second sound fluctuate with respect to the first one?</text>
+                    
+               </label>
+                
+            </gridLayout>
+                
+            <gridLayout columnstretch="1,8,1" height="1" rowstretch="1" width="3" y="2">
+                    
+               <label id="label_instructions" x="2">
+                        
+                  <text>Drag the slider below to indicate your answer. Above the slider some reference positions are indicated.
+To repeat the sounds you can click the "Repeat stimulus" button on the bottom right part of the screen.
+
+Once you're done, click the "Next" button below to continue.</text>
+                    
+               </label>
+                
+            </gridLayout>
+                
+            <gridLayout columnstretch="1,1,1,1,1" height="1" id="hints" rowstretch="1" width="5" y="3">
+                    
+               <label id="label_none" x="1">
+                        
+                  <text>None
+▼</text>
+                    
+               </label>
+                    
+               <label id="label_half" x="2">
+                        
+                  <text>Half
+▼</text>
+                    
+               </label>
+                    
+               <label id="label_equal" x="3">
+                        
+                  <text>Equal
+▼</text>
+                    
+               </label>
+                    
+               <label id="label_double" x="5">
+                        
+                  <text>Double
+▼</text>
+                    
+               </label>
+                
+            </gridLayout>
+                
+            <gridLayout columnstretch="1,8,1" height="1" rowstretch="1" width="3" y="4">
+                    
+               <slider id="slider_1" x="2">
+                        
+                  <orientation>horizontal</orientation>
+                        
+                  <min>0</min>
+                        
+                  <max>200</max>
+                        
+                  <value>100</value>
+                        
+                  <tickinterval>25</tickinterval>
+                        
+                  <stepsize>1</stepsize>
+                        
+                  <pagesize>5</pagesize>
+                    
+               </slider>
+                
+            </gridLayout>
+                
+            <gridLayout columnstretch="2,1,2" height="2" rowstretch="2,1" width="3" y="5">
+                    
+               <button id="button_next" x="2" y="1">
+                        
+                  <fontsize>12</fontsize>
+                        
+                  <text>Next</text>
+                    
+               </button>
+                
+            </gridLayout>
+            
+         </gridLayout>
+            
+         <default_answer_element>button_next</default_answer_element>
+        
+      </screen>
+    
+   </screens>
+    
+   <datablocks>
+        
+      <uri_prefix source="apexconfig">stimuli</uri_prefix>
+        
+      <datablock id="datablockcaltone">
+            
+         <device>wavdevice</device>
+            
+         <uri>tone-fc_1000-SPL_0-fs_44100-N_352800.wav</uri>
+        
+      </datablock>
+    
+      <datablock id="datablockref1">
+         <device>wavdevice</device>
+         <uri>AM_tone-fm_4.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+      </datablock>
+      <datablock id="datablockref2">
+         <device>wavdevice</device>
+         <uri>FM_tone-fm_4.00-fc_6000-df_200-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+      </datablock>
+      <datablock id="datablockref3">
+         <device>wavdevice</device>
+         <uri>AM_tone-fm_4.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+      </datablock>
+      <datablock id="datablockref4">
+         <device>wavdevice</device>
+         <uri>FM_tone-fm_4.00-fc_1500-df_700-SPL_60-w_25-fs_44100-N_88200.wav</uri>
+      </datablock>
+      <datablock id="datablock1">
+         <device>wavdevice</device>
+         <uri>AM_tone-fm_32.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+      </datablock>
+      <datablock id="datablock2">
+         <device>wavdevice</device>
+         <uri>FM_tone-fm_4.00-fc_6000-df_200-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+      </datablock>
+      <datablock id="datablock3">
+         <device>wavdevice</device>
+         <uri>AM_tone-fm_0.00-fc_1000-md_40-SPL_70-w_25-fs_44100-N_88200.wav</uri>
+      </datablock>
+      <datablock id="datablock4">
+         <device>wavdevice</device>
+         <uri>FM_tone-fm_4.00-fc_1500-df_700-SPL_80-w_25-fs_44100-N_88200.wav</uri>
+      </datablock>
+      
+   </datablocks>
+    
+   <devices>
+        
+      <device id="wavdevice" xsi:type="apex:wavDeviceType">
+            
+         <driver>portaudio</driver>
+            
+         <card>default</card>
+            
+         <channels>2</channels>
+            
+         <samplerate>44100</samplerate>
+        
+      </device>
+    
+   </devices>
+    
+   <filters>
+        
+      <filter id="ampMain" xsi:type="apex:amplifier">
+            
+         <device>wavdevice</device>
+            
+         <channels>2</channels>
+            
+         <gain channel="0" id="gain0">0.0</gain>
+            
+         <gain channel="1" id="gain1">0.0</gain>
+        
+      </filter>
+    
+   </filters>
+    
+   <stimuli>
+        
+      <fixed_parameters/>
+        
+      <stimulus id="stimcaltone">
+            
+         <datablocks>
+                
+            <sequential>
+                    
+               <datablock id="datablockcaltone"/>
+                
+            </sequential>
+            
+         </datablocks>
+        
+      </stimulus>
+    
+      <stimulus id="stimref1">
+         <datablocks>
+            <sequential>
+               <datablock id="datablockref1"/>
+            </sequential>
+         </datablocks>
+      </stimulus>
+      <stimulus id="stimref2">
+         <datablocks>
+            <sequential>
+               <datablock id="datablockref2"/>
+            </sequential>
+         </datablocks>
+      </stimulus>
+      <stimulus id="stimref3">
+         <datablocks>
+            <sequential>
+               <datablock id="datablockref3"/>
+            </sequential>
+         </datablocks>
+      </stimulus>
+      <stimulus id="stimref4">
+         <datablocks>
+            <sequential>
+               <datablock id="datablockref4"/>
+            </sequential>
+         </datablocks>
+      </stimulus>
+      <stimulus id="stim1">
+         <datablocks>
+            <sequential>
+               <datablock id="datablock1"/>
+            </sequential>
+         </datablocks>
+      </stimulus>
+      <stimulus id="stim2">
+         <datablocks>
+            <sequential>
+               <datablock id="datablock2"/>
+            </sequential>
+         </datablocks>
+      </stimulus>
+      <stimulus id="stim3">
+         <datablocks>
+            <sequential>
+               <datablock id="datablock3"/>
+            </sequential>
+         </datablocks>
+      </stimulus>
+      <stimulus id="stim4">
+         <datablocks>
+            <sequential>
+               <datablock id="datablock4"/>
+            </sequential>
+         </datablocks>
+      </stimulus>
+   </stimuli>
+    
+   <connections>
+        
+      <connection>
+            
+         <from>
+                
+            <id>_ALL_</id>
+                
+            <channel>0</channel>
+            
+         </from>
+            
+         <to>
+                
+            <id>ampMain</id>
+                
+            <channel>0</channel>
+            
+         </to>
+        
+      </connection>
+        
+      <connection>
+            
+         <from>
+                
+            <id>_ALL_</id>
+                
+            <channel>0</channel>
+            
+         </from>
+            
+         <to>
+                
+            <id>ampMain</id>
+                
+            <channel>1</channel>
+            
+         </to>
+        
+      </connection>
+        
+      <connection>
+            
+         <from>
+                
+            <id>ampMain</id>
+                
+            <channel>0</channel>
+            
+         </from>
+            
+         <to>
+                
+            <id>wavdevice</id>
+                
+            <channel>0</channel>
+            
+         </to>
+        
+      </connection>
+        
+      <connection>
+            
+         <from>
+                
+            <id>ampMain</id>
+                
+            <channel>1</channel>
+            
+         </from>
+            
+         <to>
+                
+            <id>wavdevice</id>
+                
+            <channel>1</channel>
+            
+         </to>
+        
+      </connection>
+    
+   </connections>
+    
+   <calibration profile="outs-2">
+        
+      <stimuli>
+            
+         <stimulus id="stimcaltone"/>
+        
+      </stimuli>
+        
+      <parameters>
+            
+         <parameter id="gain0">
+                
+            <targetamplitude>97</targetamplitude>
+                
+            <calibrationamplitude>97</calibrationamplitude>
+                
+            <mute>-150.0</mute>
+                
+            <max>50</max>
+            
+         </parameter>
+            
+         <parameter id="gain1">
+                
+            <targetamplitude>97</targetamplitude>
+                
+            <calibrationamplitude>97</calibrationamplitude>
+                
+            <mute>-150.0</mute>
+                
+            <max>50</max>
+            
+         </parameter>
+        
+      </parameters>
+    
+   </calibration>
+    
+   <results>
+        
+      <xsltscript>slider.xsl</xsltscript>
+        
+      <saveprocessedresults>true</saveprocessedresults>
+    
+   </results>
+    
+   <general>
+        
+      <exitafter>true</exitafter>
+        
+      <autosave>true</autosave>
+    
+   </general>
+
+</apex:apex>

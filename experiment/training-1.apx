@@ -2,7 +2,7 @@
 <apex:apex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://med.kuleuven.be/exporl/apex/3.0.4/experiment https://gilbert.med.kuleuven.be/apex/schemas/3.0.4/experiment.xsd"
  xmlns:apex="http://med.kuleuven.be/exporl/apex/3.0.4/experiment" version="1">
-    <description>Training phase for fluctuation strength AM tones experiments</description>
+    <description>Training phase for fluctuation strength experiments</description>
     <procedure xsi:type="apex:trainingProcedureType" id="procedure1">
         <parameters>
             <presentations>100</presentations>
