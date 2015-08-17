@@ -11,4 +11,3 @@ FOR %%G IN (..\experiment\*.apr) DO (
 )
 
 EXIT
-

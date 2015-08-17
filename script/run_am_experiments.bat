@@ -12,5 +12,7 @@ CLS
 
 START /W "" run_experiments.bat !EXPERIMENTS_FILES_%CONDITION%!
 START /W "" move_results_files.bat %ID%
+START /W "" rename_results_files.bat
+START /W "" copy_results_files.bat
 
 EXIT
