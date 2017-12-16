@@ -1,5 +1,4 @@
-APEX_shared
-===========
+# thesis-apex
 
-This repository contains several APEX experiment files regarding fluctuation strength.
-
+This repository contains several APEX experiment files regarding my thesis on
+fluctuation strength.
